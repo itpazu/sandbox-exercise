@@ -67,6 +67,7 @@ app.post('/upload', upload.single('file'), async (req, res, next) => {
     const { id } = response.data.data;
     res.redirect(`/analysis/${id}`);
   } catch (err) {
+    console.log('check track');
     // console.error('in catch', err.message);
     next(err);
   }

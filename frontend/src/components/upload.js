@@ -1,39 +1,48 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import FileUpload from './uploadedFile';
 
 export default function UploadButtons() {
-  const [uploaded, setUploaded] = useState('');
+  const [uploaded, setUploaded] = useState(null);
 
   const handleUploaded = ({ target: { files } }) => {
     const [file] = files;
-    setUploaded(file.name);
+    setUploaded(file);
   };
 
+  const handleDelete = () => {
+    setUploaded(null);
+  };
   return (
-    <Box
-      sx={{
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-      }}
-    >
-      <Stack direction='column' spacing={2}>
-        <FileUpload file={uploaded} />
-        <Button variant='contained' component='label'>
-          Upload
-          <input
-            hidden
-            accept='*/*'
-            multiple
-            type='file'
-            onInput={handleUploaded}
-          />
-        </Button>
-      </Stack>
-    </Box>
+    <Stack direction='column' spacing={4}>
+      {uploaded && <FileUpload file={uploaded} handleDelete={handleDelete} />}
+      <Grid sx={{ width: 'auto' }} align='center'>
+        {uploaded ? (
+          <Button variant='contained' component='label' sx={{ width: 'auto' }}>
+            Submit file
+            <input
+              hidden
+              accept='*/*'
+              multiple
+              type='file'
+              onInput={handleUploaded}
+            />
+          </Button>
+        ) : (
+          <Button variant='outlined' component='label' sx={{ width: 'auto' }}>
+            Upload File
+            <input
+              hidden
+              accept='*/*'
+              multiple
+              type='file'
+              onInput={handleUploaded}
+            />
+          </Button>
+        )}
+      </Grid>
+    </Stack>
   );
 }

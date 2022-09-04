@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import UploadButton from './components/upload';
 import Counter from './components/stopwatch';
@@ -8,6 +8,13 @@ import BoxItem from './components/BoxItem';
 import SubmitFile from './components/submitFile';
 
 function App() {
+  const [start, setStart] = useState(true);
+  console.log(start);
+
+  const toggleStart = (bool) => {
+    // console.log(toggleStart.caller);
+    setStart(bool);
+  };
   return (
     <BrowserRouter>
       <BoxItem topPosition={'25%'} leftPosition={'50%'}>
@@ -16,8 +23,14 @@ function App() {
       <BoxItem topPosition={'50%'} leftPosition={'50%'}>
         <Routes>
           <Route path='/' element={<UploadButton />} />
-          <Route path='submit' element={<SubmitFile />} />
-          <Route path='results' element={<Counter />} />
+          <Route
+            path='submit'
+            element={<SubmitFile toggleStart={toggleStart} />}
+          />
+          <Route
+            path='send'
+            element={<Counter start={start} toggleStart={toggleStart} />}
+          />
           <Route
             path='*'
             element={

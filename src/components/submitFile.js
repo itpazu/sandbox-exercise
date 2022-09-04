@@ -5,17 +5,14 @@ import Stack from '@mui/material/Stack';
 import FileUpload from './uploadedFile';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-export default function SubmitFile() {
+export default function SubmitFile({ toggleStart }) {
   const [uploaded, setUploaded] = useState(null);
-  const {
-    state: { file },
-  } = useLocation();
-  const navigate = useNavigate();
+  const { state } = useLocation();
 
+  const navigate = useNavigate();
   useEffect(() => {
-    console.log('rendered');
-    setUploaded(file);
-  }, [file]);
+    setUploaded(state?.file);
+  }, [state]);
 
   const handleDelete = () => {
     setUploaded(null);
@@ -30,7 +27,8 @@ export default function SubmitFile() {
           component='label'
           sx={{ width: 'auto' }}
           onClick={() => {
-            navigate('/results', { state: { start: true } });
+            toggleStart(true);
+            navigate('/send');
           }}
         >
           Submit file

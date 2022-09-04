@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import Button from '@mui/material/Button';
-import { useLocation } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
-const Counter = () => {
+const Counter = ({ start, toggleStart }) => {
   const [TimePassed, setTimePassed] = useState({ seconds: 0, minutes: 0 });
-  const {
-    state: { start },
-  } = useLocation();
 
   useEffect(() => {
-    console.log(start);
     let interval;
     if (!start) {
       clearInterval(interval);
@@ -34,13 +29,13 @@ const Counter = () => {
       <div>
         {TimePassed.minutes} : {TimePassed.seconds}
       </div>
-      {/* <Button
+      <Button
         onClick={() => {
-          start = false;
+          toggleStart(false);
         }}
       >
         stop
-      </Button> */}
+      </Button>
     </>
   );
 };

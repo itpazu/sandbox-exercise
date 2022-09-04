@@ -5,8 +5,9 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const breadcrumbNameMap = {
-  '/results': 'results',
   '/submit': 'submit file',
+  '/results': 'results',
+  '/send': 'send',
 };
 
 const LinkRouter = (props) => <Link {...props} component={NavLink} />;
@@ -16,7 +17,7 @@ const Page = () => {
   console.log(location);
 
   return (
-    <Breadcrumbs aria-label='breadcrumb' separator='=>'>
+    <Breadcrumbs aria-label='breadcrumb' separator='>'>
       <LinkRouter underline='hover' color='inherit' to='/'>
         File Upload
       </LinkRouter>

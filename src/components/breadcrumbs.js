@@ -5,18 +5,18 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const breadcrumbNameMap = {
-  '/counter': 'counter',
+  '/results': 'results',
+  '/submit': 'submit file',
 };
 
 const LinkRouter = (props) => <Link {...props} component={NavLink} />;
-
 const Page = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
   console.log(location);
 
   return (
-    <Breadcrumbs aria-label='breadcrumb'>
+    <Breadcrumbs aria-label='breadcrumb' separator='=>'>
       <LinkRouter underline='hover' color='inherit' to='/'>
         File Upload
       </LinkRouter>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import UploadButton from './components/upload';
-import Counter from './components/stopwatch';
+import Results from './components/results';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BreadCrumbs from './components/breadcrumbs';
 import BoxItem from './components/BoxItem';
@@ -9,10 +9,8 @@ import SubmitFile from './components/submitFile';
 
 function App() {
   const [start, setStart] = useState(true);
-  console.log(start);
 
   const toggleStart = (bool) => {
-    // console.log(toggleStart.caller);
     setStart(bool);
   };
   return (
@@ -29,7 +27,7 @@ function App() {
           />
           <Route
             path='send'
-            element={<Counter start={start} toggleStart={toggleStart} />}
+            element={<Results start={start} toggleStart={toggleStart} />}
           />
           <Route
             path='*'

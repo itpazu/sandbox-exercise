@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const fs = require('fs').promises;
+const cors = require('cors');
 var path = require('path');
 const axios = require('axios');
 const FormData = require('form-data');
@@ -10,6 +10,12 @@ const port = 5000;
 const app = express();
 const upload = multer();
 
+app.use(
+  cors({
+    origin: ['http://localhost:3000'],
+    // credentials: true,
+  })
+);
 app.get('/analysis/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
@@ -32,27 +38,22 @@ app.get('/analysis/:id', async (req, res, next) => {
     } = data;
 
     if (status === 'queued') {
-      res.statusCode = 302;
-      res.json({ id: data.id });
-    } else {
-      res.json(data);
+      res.statusCode = 201;
     }
+    res.json(data);
   } catch (err) {
     next(err);
   }
 });
 
 app.post('/upload', upload.single('file'), async (req, res, next) => {
-  // const file = await fs.readFile(
-  //   path.join(path.dirname(__dirname), '../ex.txt')
-  // );
   try {
     if (!req.file) throw new Error('file is missing');
 
     const form = new FormData();
     form.append('file', req.file.buffer, 'file.txt');
 
-    const response = await axios.post(
+    const { data } = await axios.post(
       'https://www.virustotal.com/api/v3/files',
       form,
       {
@@ -64,13 +65,18 @@ app.post('/upload', upload.single('file'), async (req, res, next) => {
         },
       }
     );
-    const { id } = response.data.data;
-    res.redirect(`/analysis/${id}`);
+    const {
+      data: { id },
+    } = data;
+    res.json({ id });
   } catch (err) {
-    console.log('check track');
-    // console.error('in catch', err.message);
     next(err);
   }
 });
 
+app.use((err, _, res, __) => {
+  console.log(err.message);
+  const statusCode = err.statusCode || 500;
+  res.status(statusCode).json({ type: 'error', message: err.message });
+});
 app.listen(port);

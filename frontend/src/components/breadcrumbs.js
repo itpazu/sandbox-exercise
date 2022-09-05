@@ -14,7 +14,7 @@ const LinkRouter = (props) => <Link {...props} component={NavLink} />;
 const Page = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
-  console.log(location);
+  console.log(pathnames);
 
   return (
     <Breadcrumbs aria-label='breadcrumb' separator='>'>

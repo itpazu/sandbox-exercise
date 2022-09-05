@@ -28,7 +28,7 @@ export default function SubmitFile({ toggleStart }) {
           sx={{ width: 'auto' }}
           onClick={() => {
             toggleStart(true);
-            navigate('/send');
+            navigate('/send', { state });
           }}
         >
           Submit file

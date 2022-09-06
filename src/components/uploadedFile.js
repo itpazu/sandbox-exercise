@@ -64,7 +64,7 @@ export default function ClickableAndDeletableChips({ file, handleDelete }) {
           alignItems='center'
           justifyContent='center'
         >
-          <Item elevation={2}>size: {size}</Item>
+          <Item elevation={2}>size: {Math.floor(size * 0.001)} KB</Item>
           <Item elevation={2}>type: {type}</Item>
         </Stack>
       </Popover>

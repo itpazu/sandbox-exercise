@@ -4,8 +4,9 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import FileUpload from './uploadedFile';
 import { useLocation, useNavigate } from 'react-router-dom';
+import BoxItem from '../theme/BoxItem';
 
-export default function SubmitFile({ toggleStart }) {
+export default function SubmitFile() {
   const [uploaded, setUploaded] = useState(null);
   const { state } = useLocation();
 
@@ -19,21 +20,25 @@ export default function SubmitFile({ toggleStart }) {
     navigate(-1);
   };
   return (
-    <Stack direction='column' spacing={4}>
-      {uploaded && <FileUpload file={uploaded} handleDelete={handleDelete} />}
-      <Grid sx={{ width: 'auto' }} align='center'>
-        <Button
-          variant='contained'
-          component='label'
-          sx={{ width: 'auto' }}
-          onClick={() => {
-            toggleStart(true);
-            navigate('/send', { state });
-          }}
-        >
-          Submit file
-        </Button>
-      </Grid>
-    </Stack>
+    <BoxItem topPosition={'50%'} leftPosition={'50%'}>
+      <Stack direction='column' spacing={2}>
+        <Grid align='center'>
+          {uploaded && (
+            <FileUpload file={uploaded} handleDelete={handleDelete} />
+          )}
+        </Grid>
+        <Grid sx={{ width: 'auto' }} align='center'>
+          <Button
+            variant='contained'
+            component='label'
+            onClick={() => {
+              navigate('/send', { state });
+            }}
+          >
+            Submit file
+          </Button>
+        </Grid>
+      </Stack>
+    </BoxItem>
   );
 }

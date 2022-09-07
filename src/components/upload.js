@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { useNavigate } from 'react-router-dom';
 import DriveFolderUploadSharpIcon from '@mui/icons-material/DriveFolderUploadSharp';
+import BoxItem from '../theme/BoxItem';
 
 export default function UploadButtons() {
   const navigate = useNavigate();
@@ -13,28 +14,29 @@ export default function UploadButtons() {
   };
 
   return (
-    <Grid container direction='column'>
-      <Grid
-        sx={{
-          width: 'auto',
-          justifyContent: 'center',
-        }}
-        align='center'
-      >
-        <DriveFolderUploadSharpIcon sx={{ fontSize: 90 }} color='primary' />
+    <BoxItem topPosition={'50%'} leftPosition={'50%'}>
+      <Grid container direction='column'>
+        <Grid
+          sx={{
+            width: 'auto',
+          }}
+          align='center'
+        >
+          <DriveFolderUploadSharpIcon sx={{ fontSize: 90 }} color='primary' />
+        </Grid>
+        <Grid sx={{ width: 'auto' }} align='center'>
+          <Button variant='outlined' component='label'>
+            Upload File
+            <input
+              hidden
+              accept='*/*'
+              multiple
+              type='file'
+              onInput={handleUploaded}
+            />
+          </Button>
+        </Grid>
       </Grid>
-      <Grid sx={{ width: 'auto' }}>
-        <Button variant='outlined' component='label'>
-          Upload File
-          <input
-            hidden
-            accept='*/*'
-            multiple
-            type='file'
-            onInput={handleUploaded}
-          />
-        </Button>
-      </Grid>
-    </Grid>
+    </BoxItem>
   );
 }

@@ -3,15 +3,7 @@ import Chip from '@mui/material/Chip';
 import Popover from '@mui/material/Popover';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-
-const Item = styled(Paper)(() => ({
-  textAlign: 'center',
-  height: 60,
-  lineHeight: '60px',
-  padding: '5px',
-}));
+import { StyledPaper } from '../theme/styledPaper';
 
 export default function ClickableAndDeletableChips({ file, handleDelete }) {
   const { name, size, type } = file;
@@ -32,7 +24,8 @@ export default function ClickableAndDeletableChips({ file, handleDelete }) {
   return (
     <>
       <Chip
-        sx={{ border: 'solid', maxWidth: '250px' }}
+        sx={{ maxWidth: '250px' }}
+        size='Large'
         label={name}
         variant='outlined'
         onClick={handleClick}
@@ -61,11 +54,13 @@ export default function ClickableAndDeletableChips({ file, handleDelete }) {
         <Stack
           direction='row'
           divider={<Divider orientation='vertical' flexItem />}
-          alignItems='center'
-          justifyContent='center'
         >
-          <Item elevation={2}>size: {Math.floor(size * 0.001)} KB</Item>
-          <Item elevation={2}>type: {type}</Item>
+          <StyledPaper elevation={2} padding={'15px'}>
+            size: {Math.floor(size * 0.001)} KB
+          </StyledPaper>
+          <StyledPaper padding={'15px'} elevation={2}>
+            type: {type}
+          </StyledPaper>
         </Stack>
       </Popover>
     </>

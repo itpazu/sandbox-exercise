@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import { useNavigate } from 'react-router-dom';
+import DriveFolderUploadSharpIcon from '@mui/icons-material/DriveFolderUploadSharp';
 
 export default function UploadButtons() {
   const navigate = useNavigate();
@@ -13,9 +13,18 @@ export default function UploadButtons() {
   };
 
   return (
-    <Stack direction='column' spacing={4}>
-      <Grid sx={{ width: 'auto' }} align='center'>
-        <Button variant='outlined' component='label' sx={{ width: 'auto' }}>
+    <Grid container direction='column'>
+      <Grid
+        sx={{
+          width: 'auto',
+          justifyContent: 'center',
+        }}
+        align='center'
+      >
+        <DriveFolderUploadSharpIcon sx={{ fontSize: 90 }} color='primary' />
+      </Grid>
+      <Grid sx={{ width: 'auto' }}>
+        <Button variant='outlined' component='label'>
           Upload File
           <input
             hidden
@@ -26,6 +35,6 @@ export default function UploadButtons() {
           />
         </Button>
       </Grid>
-    </Stack>
+    </Grid>
   );
 }

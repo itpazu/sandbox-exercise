@@ -4,7 +4,7 @@ import UploadButton from './components/upload';
 import Results from './components/results';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BreadCrumbs from './components/breadcrumbs';
-import BoxItem from './components/BoxItem';
+import BoxItem from './theme/BoxItem';
 import SubmitFile from './components/submitFile';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <BoxItem topPosition={'25%'} leftPosition={'50%'}>
+      <BoxItem topPosition={'15%'} leftPosition={'50%'}>
         <BreadCrumbs />
       </BoxItem>
       <BoxItem topPosition={'50%'} leftPosition={'50%'}>

@@ -10,11 +10,12 @@ const breadcrumbNameMap = {
   '/send': 'send',
 };
 
-const LinkRouter = (props) => <Link {...props} component={NavLink} />;
+const LinkRouter = (props) => (
+  <Link {...props} variant='h4' component={NavLink} />
+);
 const Page = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
-  console.log(pathnames);
 
   return (
     <Breadcrumbs aria-label='breadcrumb' separator='>'>
@@ -26,7 +27,7 @@ const Page = () => {
         const to = `/${pathnames.slice(0, index + 1).join('/')}`;
 
         return last ? (
-          <Typography color='text.primary' key={to}>
+          <Typography color='text.primary' key={to} variant='h4'>
             {breadcrumbNameMap[to]}
           </Typography>
         ) : (

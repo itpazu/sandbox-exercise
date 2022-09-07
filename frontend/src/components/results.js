@@ -1,16 +1,26 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Counter from './stopwatch';
 import { useLocation } from 'react-router-dom';
 import { uploadFileToSever, scanFile } from '../api/fetchResults';
+import ResultsDataTable from './table';
+import EngineResultModel from '../models/fileAnalysisModel';
+import Alert from '@mui/material/Alert';
 
-const Results = ({ start, toggleStart }) => {
+//work with mock
+// import data from '../mockResponse.json';
+// const rows = EngineResultModel.createTableData(data);
+//errors logging on screen, pause timer and remove it to the side
+
+const Results = () => {
   const { state } = useLocation();
-  console.log(useLocation());
+  const [fileScanResults, setFileScanResults] = useState(null);
+  const [fetchError, setFetchError] = useState(null);
   const isRendered = useRef(false);
   const timer = useRef(null);
+  const [start, setStart] = useState(true);
 
   useEffect(() => {
-    //todo - redirect to file upload
+    //todo - redirect to file upload for direact access to the url
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls
     if (isRendered.current) return;
     handleSubmitFile();
@@ -22,6 +32,9 @@ const Results = ({ start, toggleStart }) => {
     return () => clearTimeout(timer.current);
   }, []);
 
+  const toggleStart = (bool) => {
+    setStart(bool);
+  };
   const handleSubmitFile = async () => {
     const { file } = state ?? {}; // can remove after handling redirect
     const data = new FormData();
@@ -30,24 +43,37 @@ const Results = ({ start, toggleStart }) => {
       const fileId = await uploadFileToSever({ file: data });
       submitScanFile(fileId);
     } catch (err) {
-      console.log('logging error', err);
+      // if(err.statusCode)
+      setFetchError(err.response.data);
     }
   };
 
   const submitScanFile = async ({ id }) => {
-    const { status, data } = await scanFile(id);
-    if (status === 201) {
-      console.log(id);
-      timer.current = setTimeout(() => {
-        submitScanFile({ id });
-      }, 15000);
+    try {
+      const { status, data } = await scanFile(id);
+      if (status === 201) {
+        timer.current = setTimeout(() => {
+          submitScanFile({ id });
+        }, 15000);
+        return;
+      }
+      toggleStart(false);
+      const modeledData = EngineResultModel.createTableData(data);
+      setFileScanResults(modeledData);
       return;
+    } catch (err) {
+      setFetchError(err.response.data);
     }
-    //call function to present data
-    console.log('data==>', data);
-    return data;
   };
 
-  return <Counter start={start} toggleStart={toggleStart} />;
+  return (
+    <>
+      <ResultsDataTable rows={fileScanResults} />
+      <Counter start={start} toggleStart={toggleStart} />
+      {fetchError && (
+        <Alert severity='error'>Error: {fetchError.message}</Alert>
+      )}
+    </>
+  );
 };
 export default Results;

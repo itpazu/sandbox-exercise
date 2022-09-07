@@ -13,7 +13,6 @@ const fetchFileAnalysis = ({ id }) => {
 };
 
 const uploadFileToVirusTotal = ({ uploadUrl, form }) => {
-  console.log(uploadUrl);
   return axios.post(
     uploadUrl ||
       `${virusTotalConfig.VIRUS_TOTAL_URL}${virusTotalConfig.DEFAULT_UPLOAD}`,

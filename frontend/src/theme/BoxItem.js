@@ -7,6 +7,7 @@ const Item = styled(Box)(({ top, left }) => ({
   top: top,
   left: left,
   transform: 'translate(-50%, -50%)',
+  // fontSize: 100,
 }));
 
 export default function BoxItem({ children, topPosition, leftPosition }) {

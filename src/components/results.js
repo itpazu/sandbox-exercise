@@ -1,30 +1,38 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Counter from './stopwatch';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { uploadFileToSever, scanFile } from '../api/fetchResults';
-import ResultsDataTable from './table';
-import EngineResultModel from '../models/fileAnalysisModel';
+import EngineResultModel from '../data_models/fileAnalysisModel';
 import Alert from '@mui/material/Alert';
+import BoxItem from '../theme/BoxItem';
 
 //work with mock
-// import data from '../mockResponse.json';
-// const rows = EngineResultModel.createTableData(data);
+import data from '../mockResponse.json';
+const rows = EngineResultModel.createTableData(data);
+
 //errors logging on screen, pause timer and remove it to the side
+
+const defaultErrorMessage = { type: '500', message: 'serverFailed' };
 
 const Results = () => {
   const { state } = useLocation();
-  const [fileScanResults, setFileScanResults] = useState(null);
+  const navigate = useNavigate();
   const [fetchError, setFetchError] = useState(null);
   const isRendered = useRef(false);
   const timer = useRef(null);
   const [start, setStart] = useState(true);
 
   useEffect(() => {
-    //todo - redirect to file upload for direact access to the url
+    console.log(rows);
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls
+    navigate('/table', { state: rows }); // development mock
     if (isRendered.current) return;
+    if (!state?.file) {
+      navigate('/');
+      return;
+    }
     handleSubmitFile();
-    isRendered.current = true;
+    isRendered.current = !isRendered.current;
     return () => clearTimeout(timer.current);
   });
 
@@ -32,46 +40,54 @@ const Results = () => {
     return () => clearTimeout(timer.current);
   }, []);
 
-  const toggleStart = (bool) => {
-    setStart(bool);
+  const toggleStart = () => {
+    setStart((prevState) => {
+      return !prevState;
+    });
   };
   const handleSubmitFile = async () => {
-    const { file } = state ?? {}; // can remove after handling redirect
+    const { file } = state;
     const data = new FormData();
     data.append('file', file, file?.name);
     try {
       const fileId = await uploadFileToSever({ file: data });
       submitScanFile(fileId);
     } catch (err) {
-      // if(err.statusCode)
-      setFetchError(err.response.data);
+      toggleStart();
+      setFetchError({ ...(err.response.data = defaultErrorMessage) });
     }
   };
 
   const submitScanFile = async ({ id }) => {
-    try {
-      const { status, data } = await scanFile(id);
-      if (status === 201) {
-        timer.current = setTimeout(() => {
-          submitScanFile({ id });
-        }, 15000);
-        return;
-      }
-      toggleStart(false);
-      const modeledData = EngineResultModel.createTableData(data);
-      setFileScanResults(modeledData);
+    const { status, data } = await scanFile(id);
+    if (status === 201) {
+      timer.current = setTimeout(() => {
+        submitScanFile({ id });
+      }, 15000);
       return;
-    } catch (err) {
-      setFetchError(err.response.data);
     }
-  };
+    toggleStart();
+    const rows = EngineResultModel.createTableData(data);
+    navigate('/table', { state: rows });
 
+    return;
+  };
+  // <BoxItem
+  //   topPosition={position.topPosition}
+  //   leftPosition={position.leftPosition}
+  // ></BoxItem>;
   return (
     <>
-      <ResultsDataTable rows={fileScanResults} />
-      <Counter start={start} toggleStart={toggleStart} />
-      {fetchError && (
-        <Alert severity='error'>Error: {fetchError.message}</Alert>
+      {!!state?.file && (
+        <BoxItem>
+          <Counter start={start} toggleStart={toggleStart} />
+          {fetchError && (
+            <Alert severity='error'>
+              {' '}
+              Error {fetchError.type}: {fetchError.message}
+            </Alert>
+          )}
+        </BoxItem>
       )}
     </>
   );

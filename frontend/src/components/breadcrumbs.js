@@ -7,8 +7,8 @@ import BoxItem from '../theme/BoxItem';
 
 const breadcrumbNameMap = {
   '/submit': 'submit file',
-  '/results': 'results',
-  '/send': 'send',
+  '/send': 'Send',
+  '/table': 'Results',
 };
 
 const LinkRouter = (props) => (
@@ -19,7 +19,7 @@ const Page = () => {
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (
-    <BoxItem topPosition={'15%'} leftPosition={'50%'}>
+    <BoxItem topPosition={'5vh'} leftPosition={'50%'}>
       <Breadcrumbs fontSize={'35px'} aria-label='breadcrumb' separator='/'>
         <LinkRouter underline='hover' color='inherit' to='/'>
           File Upload

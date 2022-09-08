@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UploadButton from './components/upload';
 import Results from './components/results';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SubmitFile from './components/submitFile';
 import BreadCrumbs from './components/breadcrumbs';
+import ResultsDataTable from './components/table';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           }
         />
         <Route path='send' element={<Results />} />
+        <Route path='table' element={<ResultsDataTable />} />
       </Routes>
     </BrowserRouter>
   );

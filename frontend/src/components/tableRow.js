@@ -11,7 +11,9 @@ import {
   TableHead,
   TableRow,
   Typography,
+  Alert,
 } from '@mui/material';
+import { getAlertColor } from '../data_models/helper.js';
 
 const Row = (props) => {
   const { row } = props;
@@ -32,7 +34,9 @@ const Row = (props) => {
         <TableCell component='th' scope='row'>
           {row.engine_name}
         </TableCell>
-        <TableCell align='right'>{row.category}</TableCell>
+        <TableCell align='right'>
+          <Alert severity={getAlertColor(row.category)}>{row.category}</Alert>
+        </TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>

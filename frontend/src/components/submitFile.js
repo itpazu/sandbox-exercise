@@ -9,8 +9,8 @@ import BoxItem from '../theme/BoxItem';
 export default function SubmitFile() {
   const [uploaded, setUploaded] = useState(null);
   const { state } = useLocation();
-
   const navigate = useNavigate();
+
   useEffect(() => {
     setUploaded(state?.file);
   }, [state]);
@@ -32,6 +32,7 @@ export default function SubmitFile() {
             variant='contained'
             component='label'
             onClick={() => {
+              // toggleStart(true);
               navigate('/send', { state });
             }}
           >

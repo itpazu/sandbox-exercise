@@ -1,14 +1,11 @@
 import React from 'react';
 import Snackbar from '@mui/material/Snackbar';
 
-export default function PositionedSnackbar({
-  duration = { minutes: '', seconds: '' },
-}) {
+export default function PositionedSnackbar({ fetchDuration }) {
   const { vertical, horizontal } = {
     vertical: 'top',
     horizontal: 'right',
   };
-  console.log(duration);
   return (
     <div>
       <Snackbar
@@ -16,8 +13,8 @@ export default function PositionedSnackbar({
           vertical,
           horizontal,
         }}
-        open={!!duration}
-        message={`Request Time: ${duration.minutes}.${duration.seconds}`}
+        open={!!fetchDuration}
+        message={`Request Time: ${fetchDuration?.minutes}m : ${fetchDuration?.seconds}s`}
         key={vertical + horizontal}
       />
     </div>

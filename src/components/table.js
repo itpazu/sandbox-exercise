@@ -16,15 +16,17 @@ import Row from './tableRow';
 import TimerSnackBar from './timerSnackBar';
 
 export default function CollapsibleTable() {
-  const { state: { rows } = {}, fetchDuration } = useLocation();
   const navigate = useNavigate();
+  const { state } = useLocation();
+  console.log(state);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
+
   const handleChangePage = (_, newPage) => {
     setPage(newPage);
   };
   useEffect(() => {
-    if (!rows) navigate('/');
+    if (!state?.rows) navigate('/');
   });
 
   const handleChangeRowsPerPage = (event) => {
@@ -33,7 +35,7 @@ export default function CollapsibleTable() {
   };
   return (
     <>
-      {!!rows && (
+      {!!state?.rows && (
         <BoxItem topPosition={'60%'} leftPosition={'50%'} width={'80vw'}>
           <TableContainer
             component={Paper}
@@ -54,7 +56,7 @@ export default function CollapsibleTable() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {rows
+                {state.rows
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                   .map((row) => (
                     <Row key={row.engine_name} row={row} />
@@ -65,7 +67,7 @@ export default function CollapsibleTable() {
           <TablePagination
             rowsPerPageOptions={[5, 10]}
             component='div'
-            count={rows.length}
+            count={state.rows.length}
             rowsPerPage={rowsPerPage}
             page={page}
             onPageChange={handleChangePage}
@@ -73,7 +75,7 @@ export default function CollapsibleTable() {
           />
         </BoxItem>
       )}
-      <TimerSnackBar duration={fetchDuration} />
+      <TimerSnackBar fetchDuration={state.timePassed} />
     </>
   );
 }

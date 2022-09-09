@@ -1,16 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Alert } from '@mui/material';
-import Counter from './stopwatch';
+import CounterUi from './counterUi';
 import { uploadFileToSever, scanFile } from '../api/fetchResults';
 import EngineResultModel from '../data_models/fileAnalysisModel';
 import { defaultErrorMessage } from '../data_models/helper';
 import BoxItem from '../theme/BoxItem';
-import CounterContext from '../context/counterContext';
+import useCounter from './useCounter';
 
 //work with mock
-// import data from '../mockResponse.json';
-// const rows = EngineResultModel.createTableData(data);
+import Mockdata from '../mockResponse.json';
 
 //errors logging on screen, pause timer and remove it to the side
 const position = {
@@ -19,42 +18,43 @@ const position = {
   fontSize: '30px',
 };
 const Results = () => {
+  const [timePassed, toggleStart] = useCounter(true);
   const navigate = useNavigate();
   const { state } = useLocation();
   const [fetchError, setFetchError] = useState(null);
-  const [start, setStart] = useState(true);
-  const [fetchDuration, setFetchDuration] = useState(null);
+  const [rows, setRows] = useState(null);
   const isRendered = useRef(false);
   const timer = useRef(null);
 
   useEffect(() => {
+    if (rows) {
+      navigate('/table', { state: { timePassed, rows } });
+      return;
+    }
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls
-    // navigate('/table', { state: rows }); // development mock
     if (isRendered.current) return;
+    //navigate upon update of rows
+    //prevents direct access to /send
     if (!state?.file) {
       navigate('/');
       return;
     }
     handleSubmitFile();
     isRendered.current = !isRendered.current;
+    //clears timer when unmounting
     return () => clearTimeout(timer.current);
   });
 
-  useEffect(() => {
-    return () => clearTimeout(timer.current);
-  }, []);
-
-  const toggleStart = () => {
-    setStart((prevState) => {
-      return !prevState;
-    });
-  };
   const handleSubmitFile = async () => {
     const { file } = state;
     const data = new FormData();
     data.append('file', file, file?.name);
     try {
-      const fileId = await uploadFileToSever({ file: data });
+      //comment out to mock
+      // const fileId = await uploadFileToSever({ file: data });
+      const fileId = await new Promise((r) =>
+        setTimeout(() => r('123'), 10000)
+      ); //mock
       submitScanFile(fileId);
     } catch (err) {
       toggleStart();
@@ -63,44 +63,35 @@ const Results = () => {
   };
 
   const submitScanFile = async ({ id }) => {
-    const { status, data } = await scanFile(id);
-    if (status === 201) {
-      timer.current = setTimeout(() => {
-        submitScanFile({ id });
-      }, 15000);
-      return;
-    }
+    //uncomment real serever --
+    // const { status, data } = await scanFile(id);
+    // if (status === 201) {
+    //   timer.current = setTimeout(() => {
+    //     submitScanFile({ id });
+    //   }, 15000);
+    //   return;
+    // }
+    // -- uncommnet
     toggleStart();
+    //--mock
+    const data = await new Promise((r) => setTimeout(() => r(Mockdata), 2000));
+    // mock --
     const rows = EngineResultModel.createTableData(data);
-    navigate('/table', { state: { rows, fetchDuration } });
-
-    return;
+    setRows(rows);
+    // return;
   };
 
   return (
     <>
       {!!state?.file && (
-        <CounterContext.Provider
-          value={{
-            fetchDuration,
-            setFetchDuration,
-          }}
-        >
-          <BoxItem {...position}>
-            <Counter
-              start={start}
-              getFinalTime={(duration) => {
-                console.log(duration);
-                setFetchDuration(duration);
-              }}
-            />
-            {fetchError && (
-              <Alert severity='error'>
-                Error {fetchError.type}: {fetchError.message}
-              </Alert>
-            )}
-          </BoxItem>
-        </CounterContext.Provider>
+        <BoxItem {...position}>
+          <CounterUi timePassed={timePassed} toggleStart={toggleStart} />
+          {fetchError && (
+            <Alert severity='error'>
+              Error {fetchError.type}: {fetchError.message}
+            </Alert>
+          )}
+        </BoxItem>
       )}
     </>
   );

@@ -1,24 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
+import { Divider, Grid, Stack } from '@mui/material';
 import { StyledPaper } from '../theme/styledPaper';
-import BoxItem from '../theme/BoxItem';
+import { formatTimeString } from '../data_models/helper';
 
-const Counter = ({ start, toggleStart }) => {
-  const [TimePassed, setTimePassed] = useState({ seconds: 0, minutes: 0 });
-  const [position, setPosition] = useState({
-    topPosition: '50%',
-    leftPosition: '50%',
-    fontSize: '30px',
-  });
+const Counter = ({ start, getFinalTime }) => {
+  const [timePassed, setTimePassed] = useState({ seconds: 0, minutes: 0 });
 
   useEffect(() => {
     let interval;
     if (!start) {
       clearInterval(interval);
-      setPosition({ topPosition: '25%', leftPosition: '15%' });
     } else {
       interval = setInterval(() => {
         setTimePassed((timeObject) => {
@@ -30,58 +21,47 @@ const Counter = ({ start, toggleStart }) => {
         });
       }, 1000);
     }
+
     return () => {
       clearInterval(interval);
     };
   }, [start]);
+
+  // const formatTimeString = (timeElm) => {
+  //   const twoDigitsTime =
+  //     timeElm.toString().length < 2 ? `0${timeElm}` : timeElm;
+  //   return twoDigitsTime;
+  // };
+
   return (
     <>
-      <BoxItem
-        topPosition={position.topPosition}
-        leftPosition={position.leftPosition}
+      <Stack
+        direction='row'
+        divider={<Divider orientation='vertical' flexItem />}
+        spacing={1}
       >
-        <Stack
-          direction='row'
-          divider={<Divider orientation='vertical' />}
-          spacing={0}
-        >
-          <Grid align='center'>
-            <StyledPaper width={'50%'} fontSize={'30px'}>
-              MIN
-            </StyledPaper>
+        {Object.entries(timePassed)
+          .sort()
+          .map(([key, val]) => {
+            return (
+              <Grid align='center' key={key}>
+                <StyledPaper key={val} width={'50%'} fontSize={'30px'}>
+                  {key.slice(0, 3).toUpperCase()}
+                </StyledPaper>
 
-            <StyledPaper
-              padding={'45px'}
-              fontSize={'60px'}
-              width={80}
-              elevation={5}
-            >
-              {TimePassed.minutes}
-            </StyledPaper>
-          </Grid>
-
-          <Grid align='center'>
-            <StyledPaper width={'50%'} fontSize={'30px'}>
-              SEC
-            </StyledPaper>
-            <StyledPaper
-              fontSize={'60px'}
-              padding={'45px'}
-              elevation={5}
-              width={80}
-            >
-              {TimePassed.seconds}
-            </StyledPaper>
-          </Grid>
-        </Stack>
-        <Button
-          onClick={() => {
-            toggleStart(false);
-          }}
-        >
-          stop
-        </Button>
-      </BoxItem>
+                <StyledPaper
+                  padding={'45px'}
+                  fontSize={'60px'}
+                  width={80}
+                  elevation={5}
+                  key={key + val}
+                >
+                  {formatTimeString(val)}
+                </StyledPaper>
+              </Grid>
+            );
+          })}
+      </Stack>
     </>
   );
 };

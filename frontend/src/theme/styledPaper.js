@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+import { Paper, colors } from '@mui/material/';
 
 export const StyledPaper = styled(Paper)(
   ({ padding, theme, width, fontSize }) => {
@@ -8,7 +8,7 @@ export const StyledPaper = styled(Paper)(
       lineHeight: '60px',
       elevation: 2,
       padding,
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: colors.blue[300],
       width,
       fontSize,
     };

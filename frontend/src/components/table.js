@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-
 import {
   Table,
   TableBody,
@@ -14,9 +13,10 @@ import {
 import BoxItem from '../theme/BoxItem';
 import TablePagination from '@mui/material/TablePagination';
 import Row from './tableRow';
+import TimerSnackBar from './timerSnackBar';
 
 export default function CollapsibleTable() {
-  const { state: rows } = useLocation();
+  const { state: { rows } = {}, fetchDuration } = useLocation();
   const navigate = useNavigate();
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -73,6 +73,7 @@ export default function CollapsibleTable() {
           />
         </BoxItem>
       )}
+      <TimerSnackBar duration={fetchDuration} />
     </>
   );
 }

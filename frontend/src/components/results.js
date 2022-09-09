@@ -1,31 +1,35 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Counter from './stopwatch';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Alert } from '@mui/material';
+import Counter from './stopwatch';
 import { uploadFileToSever, scanFile } from '../api/fetchResults';
 import EngineResultModel from '../data_models/fileAnalysisModel';
-import Alert from '@mui/material/Alert';
+import { defaultErrorMessage } from '../data_models/helper';
 import BoxItem from '../theme/BoxItem';
+import CounterContext from '../context/counterContext';
 
 //work with mock
-import data from '../mockResponse.json';
-const rows = EngineResultModel.createTableData(data);
+// import data from '../mockResponse.json';
+// const rows = EngineResultModel.createTableData(data);
 
 //errors logging on screen, pause timer and remove it to the side
-
-const defaultErrorMessage = { type: '500', message: 'serverFailed' };
-
+const position = {
+  topPosition: '50%',
+  leftPosition: '50%',
+  fontSize: '30px',
+};
 const Results = () => {
-  const { state } = useLocation();
   const navigate = useNavigate();
+  const { state } = useLocation();
   const [fetchError, setFetchError] = useState(null);
+  const [start, setStart] = useState(true);
+  const [fetchDuration, setFetchDuration] = useState(null);
   const isRendered = useRef(false);
   const timer = useRef(null);
-  const [start, setStart] = useState(true);
 
   useEffect(() => {
-    console.log(rows);
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls
-    navigate('/table', { state: rows }); // development mock
+    // navigate('/table', { state: rows }); // development mock
     if (isRendered.current) return;
     if (!state?.file) {
       navigate('/');
@@ -68,26 +72,35 @@ const Results = () => {
     }
     toggleStart();
     const rows = EngineResultModel.createTableData(data);
-    navigate('/table', { state: rows });
+    navigate('/table', { state: { rows, fetchDuration } });
 
     return;
   };
-  // <BoxItem
-  //   topPosition={position.topPosition}
-  //   leftPosition={position.leftPosition}
-  // ></BoxItem>;
+
   return (
     <>
       {!!state?.file && (
-        <BoxItem>
-          <Counter start={start} toggleStart={toggleStart} />
-          {fetchError && (
-            <Alert severity='error'>
-              {' '}
-              Error {fetchError.type}: {fetchError.message}
-            </Alert>
-          )}
-        </BoxItem>
+        <CounterContext.Provider
+          value={{
+            fetchDuration,
+            setFetchDuration,
+          }}
+        >
+          <BoxItem {...position}>
+            <Counter
+              start={start}
+              getFinalTime={(duration) => {
+                console.log(duration);
+                setFetchDuration(duration);
+              }}
+            />
+            {fetchError && (
+              <Alert severity='error'>
+                Error {fetchError.type}: {fetchError.message}
+              </Alert>
+            )}
+          </BoxItem>
+        </CounterContext.Provider>
       )}
     </>
   );

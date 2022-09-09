@@ -11,3 +11,10 @@ export const getAlertColor = (category) => {
       return 'info';
   }
 };
+
+export const defaultErrorMessage = { type: '500', message: 'serverFailed' };
+
+export const formatTimeString = (timeElm) => {
+  const twoDigitsTime = timeElm.toString().length < 2 ? `0${timeElm}` : timeElm;
+  return twoDigitsTime;
+};

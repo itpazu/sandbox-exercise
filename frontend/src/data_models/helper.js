@@ -12,6 +12,13 @@ export const getAlertColor = (category) => {
   }
 };
 
+export const hexColors = {
+  success: '#FDEDED',
+  warning: '#E5F6FD',
+  info: '#EDF7ED',
+  error: '#FDEDED',
+};
+
 export const defaultErrorMessage = { type: '500', message: 'serverFailed' };
 
 export const formatTimeString = (timeElm) => {

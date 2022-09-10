@@ -5,5 +5,5 @@
 
 # production
 /build
-
+.vscode
 npm-debug.log*

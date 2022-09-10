@@ -1,5 +1,4 @@
 const errorMiddleware = (err, _, res, __) => {
-  console.log(err.message);
   const statusCode = err.statusCode || 500;
   res
     .status(statusCode)

@@ -1,0 +1,998 @@
+2022-09-10T19:57:37.968Z [error] : middlewareError / uncaughtException: Cannot read properties of undefined (reading 'req') / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {},
+		"level": "error",
+		"message": "uncaughtException: Cannot read properties of undefined (reading 'req')\nTypeError: Cannot read properties of undefined (reading 'req')\n    at Printf.template (/home/itpazu/exercise-sassa/backend/logger/logger.js:30:82)\n    at Printf.transform (/home/itpazu/exercise-sassa/backend/node_modules/logform/printf.js:11:26)\n    at Format.transform (/home/itpazu/exercise-sassa/backend/node_modules/logform/combine.js:20:24)\n    at Console._write (/home/itpazu/exercise-sassa/backend/node_modules/winston-transport/index.js:91:33)\n    at doWrite (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:409:139)\n    at writeOrBuffer (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:398:5)\n    at Console.Writable.write (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:307:11)\n    at DerivedLogger.ondata (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js:681:20)\n    at DerivedLogger.emit (node:events:539:35)\n    at addChunk (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js:298:12)",
+		"stack": "TypeError: Cannot read properties of undefined (reading 'req')\n    at Printf.template (/home/itpazu/exercise-sassa/backend/logger/logger.js:30:82)\n    at Printf.transform (/home/itpazu/exercise-sassa/backend/node_modules/logform/printf.js:11:26)\n    at Format.transform (/home/itpazu/exercise-sassa/backend/node_modules/logform/combine.js:20:24)\n    at Console._write (/home/itpazu/exercise-sassa/backend/node_modules/winston-transport/index.js:91:33)\n    at doWrite (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:409:139)\n    at writeOrBuffer (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:398:5)\n    at Console.Writable.write (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js:307:11)\n    at DerivedLogger.ondata (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js:681:20)\n    at DerivedLogger.emit (node:events:539:35)\n    at addChunk (/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js:298:12)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 22:57:37 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 3649,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 74235904,
+				"heapTotal": 12795904,
+				"heapUsed": 10883200,
+				"external": 33856253,
+				"arrayBuffers": 19790423
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.08,
+				0.03,
+				0.03
+			],
+			"uptime": 522909.74
+		},
+		"trace": [
+			{
+				"column": 82,
+				"file": "/home/itpazu/exercise-sassa/backend/logger/logger.js",
+				"function": "Printf.template",
+				"line": 30,
+				"method": "template",
+				"native": false
+			},
+			{
+				"column": 26,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/logform/printf.js",
+				"function": "Printf.transform",
+				"line": 11,
+				"method": "transform",
+				"native": false
+			},
+			{
+				"column": 24,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/logform/combine.js",
+				"function": "Format.transform",
+				"line": 20,
+				"method": "transform",
+				"native": false
+			},
+			{
+				"column": 33,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/winston-transport/index.js",
+				"function": "Console._write",
+				"line": 91,
+				"method": "_write",
+				"native": false
+			},
+			{
+				"column": 139,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js",
+				"function": "doWrite",
+				"line": 409,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js",
+				"function": "writeOrBuffer",
+				"line": 398,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 11,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_writable.js",
+				"function": "Console.Writable.write",
+				"line": 307,
+				"method": "write",
+				"native": false
+			},
+			{
+				"column": 20,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js",
+				"function": "DerivedLogger.ondata",
+				"line": 681,
+				"method": "ondata",
+				"native": false
+			},
+			{
+				"column": 35,
+				"file": "node:events",
+				"function": "DerivedLogger.emit",
+				"line": 539,
+				"method": "emit",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/readable-stream/lib/_stream_readable.js",
+				"function": "addChunk",
+				"line": 298,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "19728c02-c0cd-4227-96a1-0a8e68530a30",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------511780635129748919991398",
+				"content-length": "6581150"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-10T20:12:30.629Z [error] : middlewareError / uncaughtException: file is missing / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"statusCode": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: file is missing\nError: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"stack": "Error: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 23:12:30 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 4273,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 67727360,
+				"heapTotal": 13058048,
+				"heapUsed": 11541056,
+				"external": 7535225,
+				"arrayBuffers": 6622975
+			}
+		},
+		"os": {
+			"loadavg": [
+				0,
+				0,
+				0
+			],
+			"uptime": 523802.4
+		},
+		"trace": [
+			{
+				"column": 17,
+				"file": "/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js",
+				"function": "changeEndPointForLargeFiles",
+				"line": 5,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "trim_prefix",
+				"line": 328,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 286,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "done",
+				"line": 45,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 68,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "indicateDone",
+				"line": 49,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": null,
+				"line": 166,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "Multipart.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "202825a0-b78a-4a92-949d-51bf0933f3a3",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------696445368439753599573235",
+				"content-length": "172"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-10T20:12:50.147Z [error] : middlewareError / uncaughtException: file is missing / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"statusCode": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: file is missing\nError: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"stack": "Error: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 23:12:50 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 4455,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 55640064,
+				"heapTotal": 12271616,
+				"heapUsed": 10743128,
+				"external": 939188,
+				"arrayBuffers": 41715
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.08,
+				0.02,
+				0.01
+			],
+			"uptime": 523821.92
+		},
+		"trace": [
+			{
+				"column": 17,
+				"file": "/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js",
+				"function": "changeEndPointForLargeFiles",
+				"line": 5,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "trim_prefix",
+				"line": 328,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 286,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "done",
+				"line": 45,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 68,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "indicateDone",
+				"line": 49,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": null,
+				"line": 166,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "Multipart.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "9417196a-3996-4af3-8b8f-c60f85165a66",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------199636054754970889197208",
+				"content-length": "172"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-10T20:13:41.445Z [error] : middlewareError / uncaughtException: file is missing / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"statusCode": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: file is missing\nError: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"stack": "Error: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 23:13:41 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 4553,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 62754816,
+				"heapTotal": 29048832,
+				"heapUsed": 10669648,
+				"external": 939924,
+				"arrayBuffers": 41715
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.15,
+				0.04,
+				0.01
+			],
+			"uptime": 523873.22
+		},
+		"trace": [
+			{
+				"column": 17,
+				"file": "/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js",
+				"function": "changeEndPointForLargeFiles",
+				"line": 5,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "trim_prefix",
+				"line": 328,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 286,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "done",
+				"line": 45,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 68,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "indicateDone",
+				"line": 49,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": null,
+				"line": 166,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "Multipart.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "7543d4f6-e4d8-401e-b824-dbdc2855fbef",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------794059948064701436134467",
+				"content-length": "172"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+{
+  meta: {
+    error: Error: file is missing
+        at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)
+        at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)
+        at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)
+        at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)
+        at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)
+        at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)
+        at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)
+        at Multipart.emit (node:events:527:28) {
+      statusCode: 400
+    },
+    level: 'error',
+    message: 'uncaughtException: file is missing\n' +
+      'Error: file is missing\n' +
+      '    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n' +
+      '    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n' +
+      '    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n' +
+      '    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n' +
+      '    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n' +
+      '    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n' +
+      '    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n' +
+      '    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n' +
+      '    at Multipart.emit (node:events:527:28)',
+    stack: 'Error: file is missing\n' +
+      '    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n' +
+      '    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n' +
+      '    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n' +
+      '    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n' +
+      '    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n' +
+      '    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n' +
+      '    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n' +
+      '    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n' +
+      '    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n' +
+      '    at Multipart.emit (node:events:527:28)',
+    exception: true,
+    date: 'Sat Sep 10 2022 23:24:39 GMT+0300 (Israel Daylight Time)',
+    process: {
+      pid: 5083,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/itpazu/exercise-sassa/backend',
+      execPath: '/home/itpazu/.nvm/versions/node/v16.15.1/bin/node',
+      version: 'v16.15.1',
+      argv: [
+        '/home/itpazu/.nvm/versions/node/v16.15.1/bin/node',
+        '/home/itpazu/exercise-sassa/backend'
+      ],
+      memoryUsage: {
+        rss: 63344640,
+        heapTotal: 29573120,
+        heapUsed: 10584096,
+        external: 939924,
+        arrayBuffers: 41715
+      }
+    },
+    os: { loadavg: [ 0.25, 0.1, 0.02 ], uptime: 524531.14 },
+    trace: [
+      {
+        column: 17,
+        file: '/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js',
+        function: 'changeEndPointForLargeFiles',
+        line: 5,
+        method: null,
+        native: false
+      },
+      {
+        column: 5,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js',
+        function: 'Layer.handle [as handle_request]',
+        line: 95,
+        method: 'handle [as handle_request]',
+        native: false
+      },
+      {
+        column: 13,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js',
+        function: 'trim_prefix',
+        line: 328,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js',
+        function: null,
+        line: 286,
+        method: null,
+        native: false
+      },
+      {
+        column: 12,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js',
+        function: 'Function.process_params',
+        line: 346,
+        method: 'process_params',
+        native: false
+      },
+      {
+        column: 10,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js',
+        function: 'next',
+        line: 280,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js',
+        function: 'done',
+        line: 45,
+        method: null,
+        native: false
+      },
+      {
+        column: 68,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js',
+        function: 'indicateDone',
+        line: 49,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js',
+        function: null,
+        line: 166,
+        method: null,
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'Multipart.emit',
+        line: 527,
+        method: 'emit',
+        native: false
+      }
+    ],
+    req: {
+      url: '/upload',
+      headers: {
+        'x-apikey': 'd0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '448b33b7-3a2d-42b3-a4ed-c5e8e598a8db',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------215090864971363308837601',
+        'content-length': '172'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/upload',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2022-09-10T20:24:39.375Z'
+}
+2022-09-10T20:25:37.970Z [error] : middlewareError / uncaughtException: file is missing / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"statusCode": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: file is missing\nError: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"stack": "Error: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 23:25:37 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 5225,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 62795776,
+				"heapTotal": 29310976,
+				"heapUsed": 10601432,
+				"external": 939924,
+				"arrayBuffers": 41715
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.16,
+				0.09,
+				0.02
+			],
+			"uptime": 524589.74
+		},
+		"trace": [
+			{
+				"column": 17,
+				"file": "/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js",
+				"function": "changeEndPointForLargeFiles",
+				"line": 5,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "trim_prefix",
+				"line": 328,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 286,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "done",
+				"line": 45,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 68,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "indicateDone",
+				"line": 49,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": null,
+				"line": 166,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "Multipart.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "f1f0e2eb-a674-4336-a145-5834b0ce71ae",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------005360269590292681573166",
+				"content-length": "172"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-10T20:27:55.085Z [error] : middlewareError / uncaughtException: file is missing / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"statusCode": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: file is missing\nError: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"stack": "Error: file is missing\n    at changeEndPointForLargeFiles (/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js:5:17)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:328:13)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at done (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:45:7)\n    at indicateDone (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:49:68)\n    at Multipart.<anonymous> (/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js:166:7)\n    at Multipart.emit (node:events:527:28)",
+		"exception": true,
+		"date": "Sat Sep 10 2022 23:27:55 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 5303,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 62148608,
+				"heapTotal": 28786688,
+				"heapUsed": 10668328,
+				"external": 939924,
+				"arrayBuffers": 41715
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.02,
+				0.06,
+				0.01
+			],
+			"uptime": 524726.86
+		},
+		"trace": [
+			{
+				"column": 17,
+				"file": "/home/itpazu/exercise-sassa/backend/middlewares/fileMiddlwares.js",
+				"function": "changeEndPointForLargeFiles",
+				"line": 5,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "trim_prefix",
+				"line": 328,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 286,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "done",
+				"line": 45,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 68,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": "indicateDone",
+				"line": 49,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 7,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/multer/lib/make-middleware.js",
+				"function": null,
+				"line": 166,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "Multipart.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "dba45ad9-0f99-4e41-a942-e012be5c4442",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------825092344343401032853823",
+				"content-length": "172"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}

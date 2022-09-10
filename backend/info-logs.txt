@@ -1,0 +1,28 @@
+2022-09-10T19:56:55.436Z / error / middlewareError / from client: PostmanRuntime/7.29.2
+2022-09-10T19:56:55.446Z / info / HTTP POST /upload / from client: PostmanRuntime/7.29.2
+2022-09-10T19:57:37.965Z / error / middlewareError / from client: PostmanRuntime/7.29.2
+2022-09-10T19:57:37.971Z / info / HTTP POST /upload / from client: PostmanRuntime/7.29.2
+2022-09-10T19:59:40.059Z / info / client submitted file [Philippe_van_Parijs,_Joshua_Cohen,_Joel_Rogers]_W(z-lib.org).pdf 
+2022-09-10T20:00:02.185Z / info / HTTP POST /upload 
+2022-09-10T20:07:36.710Z / info / client submitted file [Philippe_van_Parijs,_Joshua_Cohen,_Joel_Rogers]_W(z-lib.org).pdf undefined
+2022-09-10T20:07:58.771Z / info / HTTP POST /upload PostmanRuntime/7.29.2
+2022-09-10T20:09:47.260Z / info / client submitted file [Philippe_van_Parijs,_Joshua_Cohen,_Joel_Rogers]_W(z-lib.org).pdf / undefined
+2022-09-10T20:10:09.313Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:12:30.627Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:12:30.633Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:12:50.146Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:12:50.154Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:13:41.444Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:13:41.450Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:16:00.804Z / info / client submitted file Malcolm_Torry_The Feasibility of Citizen Income.docx 
+2022-09-10T20:16:11.071Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:19:39.433Z / info / client submitted file Malcolm_Torry_The Feasibility of Citizen Income.docx 
+2022-09-10T20:19:49.683Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:23:37.993Z / info / client submitted file Malcolm_Torry_The Feasibility of Citizen Income.docx 
+2022-09-10T20:23:48.633Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:24:39.374Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:24:39.382Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:25:37.968Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:25:37.979Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-10T20:27:55.084Z / error / middlewareError / PostmanRuntime/7.29.2
+2022-09-10T20:27:55.096Z / info / HTTP POST /upload / PostmanRuntime/7.29.2

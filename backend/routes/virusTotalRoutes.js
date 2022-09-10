@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const multer = require('multer');
 const FormData = require('form-data');
+const { logger } = require('../logger/logger');
 
 const {
   changeEndPointForLargeFiles,
@@ -8,7 +9,7 @@ const {
 const {
   fetchFileAnalysis,
   uploadFileToVirusTotal,
-} = require('../externalApi/virusTotalApi');
+} = require('../external_api/virusTotalApi');
 
 const router = new Router();
 const upload = multer();
@@ -40,6 +41,7 @@ router.post('/upload', async (req, res, next) => {
     const uploadUrl = req.locals?.url;
     const form = new FormData();
     form.append('file', req.file.buffer, 'file.txt');
+    logger.info(`client submitted file ${req.file.originalname}`);
     const { data } = await uploadFileToVirusTotal({ uploadUrl, form });
     const {
       data: { id },

@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Divider, Grid, Stack, Button } from '@mui/material';
 import { StyledPaper } from '../theme/styledPaper';
 import { formatTimeString } from '../data_models/helper';
 
 const CounterUi = ({ timePassed, toggleStart }) => {
+  const navigate = useNavigate();
   return (
     <>
       <Stack
@@ -33,7 +35,14 @@ const CounterUi = ({ timePassed, toggleStart }) => {
             );
           })}
       </Stack>
-      <Button onClick={() => toggleStart()}>Abort</Button>
+      <Button
+        onClick={() => {
+          toggleStart();
+          navigate('/');
+        }}
+      >
+        Abort
+      </Button>
     </>
   );
 };

@@ -26,3 +26,20 @@
 2022-09-10T20:25:37.979Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
 2022-09-10T20:27:55.084Z / error / middlewareError / PostmanRuntime/7.29.2
 2022-09-10T20:27:55.096Z / info / HTTP POST /upload / PostmanRuntime/7.29.2
+2022-09-11T16:58:46.713Z / info / client submitted file hh.txt 
+2022-09-11T16:58:47.880Z / info / HTTP POST /upload / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T16:58:48.548Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T16:59:04.384Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T16:59:20.151Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T16:59:35.673Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T16:59:51.279Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:00:07.057Z / info / HTTP GET /analysis/MzZmM2FmNjIyNmUwYjUzMDNlMTliODI0ZTc0NDIyNzI6MTY2MjkxNTUyOA== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:02:18.374Z / info / client submitted file attestation Daniela.pdf 
+2022-09-11T17:02:21.750Z / info / HTTP POST /upload / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:02:22.572Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:02:38.117Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:02:53.663Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:03:09.318Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:03:24.816Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:03:40.358Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+2022-09-11T17:03:56.020Z / info / HTTP GET /analysis/ODA5NWQzNGNiYTA5ZmFlNzk2YTQ4NzllOTljZWQyMmI6MTY2MjkxNTc0MQ== / Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36

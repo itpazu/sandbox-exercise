@@ -12,7 +12,11 @@ export default function SubmitFile() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setUploaded(state?.file);
+    if (!state?.file) {
+      navigate('/');
+    } else {
+      setUploaded(state.file);
+    }
   }, [state]);
 
   const handleDelete = () => {

@@ -1,15 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useTheme } from '@mui/material/styles';
 import { Alert } from '@mui/material';
 import CounterUi from './counterUi';
 import { uploadFileToSever, scanFile } from '../api/fetchResults';
 import EngineResultModel from '../data_models/fileAnalysisModel';
 import { defaultErrorMessage } from '../data_models/helper';
 import BoxItem from '../theme/BoxItem';
-import useCounter from './useCounter';
+import useCounter from '../hooks/useCounter';
+import ChartData from '../data_models/summaryModal';
 
 //work with mock
-import Mockdata from '../mockResponse.json';
+// import Mockdata from '../mockResponse.json';
 
 //errors logging on screen, pause timer and remove it to the side
 const position = {
@@ -21,14 +23,16 @@ const Results = () => {
   const [timePassed, toggleStart] = useCounter(true);
   const navigate = useNavigate();
   const { state } = useLocation();
+  const muiTheme = useTheme();
   const [fetchError, setFetchError] = useState(null);
   const [rows, setRows] = useState(null);
+  const [chartData, setChartData] = useState(null);
   const isRendered = useRef(false);
   const timer = useRef(null);
 
   useEffect(() => {
     if (rows) {
-      navigate('/table', { state: { timePassed, rows } });
+      navigate('/results', { state: { timePassed, rows, chartData } });
       return;
     }
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls
@@ -51,10 +55,8 @@ const Results = () => {
     data.append('file', file, file?.name);
     try {
       //comment out to mock
-      // const fileId = await uploadFileToSever({ file: data });
-      const fileId = await new Promise((r) =>
-        setTimeout(() => r('123'), 10000)
-      ); //mock
+      const fileId = await uploadFileToSever({ file: data });
+      // const fileId = await new Promise((r) => setTimeout(() => r('123'), 2000)); //mock
       submitScanFile(fileId);
     } catch (err) {
       toggleStart();
@@ -64,21 +66,23 @@ const Results = () => {
 
   const submitScanFile = async ({ id }) => {
     //uncomment real serever --
-    // const { status, data } = await scanFile(id);
-    // if (status === 201) {
-    //   timer.current = setTimeout(() => {
-    //     submitScanFile({ id });
-    //   }, 15000);
-    //   return;
-    // }
+    const { status, data } = await scanFile(id);
+    if (status === 201) {
+      timer.current = setTimeout(() => {
+        submitScanFile({ id });
+      }, 15000);
+      return;
+    }
     // -- uncommnet
     toggleStart();
     //--mock
-    const data = await new Promise((r) => setTimeout(() => r(Mockdata), 2000));
+    // const data = await new Promise((r) => setTimeout(() => r(Mockdata), 2000));
     // mock --
     const rows = EngineResultModel.createTableData(data);
+    const dataSet = new ChartData(data, muiTheme);
+
     setRows(rows);
-    // return;
+    setChartData(dataSet);
   };
 
   return (

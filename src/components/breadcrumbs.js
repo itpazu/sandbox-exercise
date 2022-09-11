@@ -1,12 +1,13 @@
 import React from 'react';
-import Link from '@mui/material/Link';
-import { Typography, Breadcrumbs, colors } from '@mui/material';
+import { Typography, Breadcrumbs, colors, Link } from '@mui/material';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const breadcrumbNameMap = {
-  '/submit': 'submit file',
-  '/send': 'Send',
-  '/table': 'Results',
+  '/submit': 'Submit File',
+  '/send': 'Getting Results..',
+  '/results': 'Results',
+  '/results/table': 'Table',
+  '/results/doughnut': 'Summary',
 };
 
 const LinkRouter = (props) => (
@@ -29,11 +30,11 @@ const Page = () => {
       <LinkRouter underline='hover' color='inherit' to='/'>
         File Upload
       </LinkRouter>
-      {pathnames.map((_, index) => {
+      {pathnames.map((name, index) => {
         const last = index === pathnames.length - 1;
         const to = `/${pathnames.slice(0, index + 1).join('/')}`;
 
-        return last ? (
+        return last || name === 'results' ? (
           <Typography color='text.primary' key={to} variant='h4'>
             {breadcrumbNameMap[to]}
           </Typography>

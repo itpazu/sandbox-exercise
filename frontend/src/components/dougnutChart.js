@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+// eslint-disable-next-line
 import { Chart as ChartJs } from 'chart.js/auto';
 import BoxItem from '../theme/BoxItem';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -7,7 +8,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 function DougnutChart() {
   const navigate = useNavigate();
   const { state } = useLocation();
-  console.log(state?.chartData);
 
   useEffect(() => {
     if (!state) navigate('/');

@@ -7481,3 +7481,2334 @@
 		}
 	}
 }
+2022-09-12T16:42:05.661Z [error] : middlewareError / uncaughtException: sendChart is not a function / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {},
+		"level": "error",
+		"message": "uncaughtException: sendChart is not a function\nTypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"stack": "TypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 19:42:05 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 7302,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 55701504,
+				"heapTotal": 14893056,
+				"heapUsed": 13802008,
+				"external": 1053902,
+				"arrayBuffers": 143606
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.35,
+				0.42,
+				0.32
+			],
+			"uptime": 620694.17
+		},
+		"trace": [
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 19,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js",
+				"function": null,
+				"line": 137,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "node:async_hooks",
+				"function": "AsyncResource.runInAsyncScope",
+				"line": 202,
+				"method": "runInAsyncScope",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7498",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T16:43:39.777Z [error] : middlewareError / uncaughtException: sendChart is not a function / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {},
+		"level": "error",
+		"message": "uncaughtException: sendChart is not a function\nTypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"stack": "TypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 19:43:39 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 7302,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 55705600,
+				"heapTotal": 15417344,
+				"heapUsed": 14136024,
+				"external": 1067623,
+				"arrayBuffers": 56863
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.12,
+				0.32,
+				0.29
+			],
+			"uptime": 620788.29
+		},
+		"trace": [
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 19,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js",
+				"function": null,
+				"line": 137,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "node:async_hooks",
+				"function": "AsyncResource.runInAsyncScope",
+				"line": 202,
+				"method": "runInAsyncScope",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7498",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T16:44:11.638Z [error] : middlewareError / uncaughtException: sendChart is not a function / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {},
+		"level": "error",
+		"message": "uncaughtException: sendChart is not a function\nTypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"stack": "TypeError: sendChart is not a function\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:5\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at /home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js:137:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 19:44:11 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 7302,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 55599104,
+				"heapTotal": 15941632,
+				"heapUsed": 13941872,
+				"external": 1081279,
+				"arrayBuffers": 49365
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.06,
+				0.28,
+				0.28
+			],
+			"uptime": 620820.15
+		},
+		"trace": [
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 19,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/body-parser/lib/read.js",
+				"function": null,
+				"line": 137,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 9,
+				"file": "node:async_hooks",
+				"function": "AsyncResource.runInAsyncScope",
+				"line": 202,
+				"method": "runInAsyncScope",
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7498",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T16:55:16.737Z [error] : middlewareError / uncaughtException: emailAddress is not defined / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {},
+		"level": "error",
+		"message": "uncaughtException: emailAddress is not defined\nReferenceError: emailAddress is not defined\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "ReferenceError: emailAddress is not defined\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:19:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 19:55:16 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 7634,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 58523648,
+				"heapTotal": 15155200,
+				"heapUsed": 14260752,
+				"external": 1077541,
+				"arrayBuffers": 152468
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.26,
+				0.26,
+				0.25
+			],
+			"uptime": 621485.25
+		},
+		"trace": [
+			{
+				"column": 46,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 19,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7498",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:40:41.383Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:40:43 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:40:41 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 8305,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 58454016,
+				"heapTotal": 15417344,
+				"heapUsed": 14214784,
+				"external": 1094142,
+				"arrayBuffers": 67977
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.56,
+				0.57,
+				0.44
+			],
+			"uptime": 627809.89
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:40:41.885Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:40:43 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:40:41 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 8305,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 59338752,
+				"heapTotal": 15679488,
+				"heapUsed": 14842504,
+				"external": 1118999,
+				"arrayBuffers": 92794
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.56,
+				0.57,
+				0.44
+			],
+			"uptime": 627810.39
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:44:29.486Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:44:31 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:44:29 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10004,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 64610304,
+				"heapTotal": 32980992,
+				"heapUsed": 14312592,
+				"external": 1090607,
+				"arrayBuffers": 163507
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.64,
+				0.55,
+				0.46
+			],
+			"uptime": 628038
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:45:06.927Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:45:08 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:45:06 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10065,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 66330624,
+				"heapTotal": 32718848,
+				"heapUsed": 14346432,
+				"external": 1090607,
+				"arrayBuffers": 163507
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.74,
+				0.59,
+				0.47
+			],
+			"uptime": 628075.44
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:45:38.325Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:45:40 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:45:38 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10115,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 65744896,
+				"heapTotal": 33767424,
+				"heapUsed": 14170792,
+				"external": 1078511,
+				"arrayBuffers": 152702
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.6,
+				0.57,
+				0.47
+			],
+			"uptime": 628106.84
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:46:10.086Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:46:12 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:46:10 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10177,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 65773568,
+				"heapTotal": 33243136,
+				"heapUsed": 14615136,
+				"external": 3472100,
+				"arrayBuffers": 171699
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.59,
+				0.56,
+				0.47
+			],
+			"uptime": 628138.6
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:46:30.432Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:46:32 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:46:30 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10227,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 66088960,
+				"heapTotal": 33505280,
+				"heapUsed": 14341880,
+				"external": 1079802,
+				"arrayBuffers": 152702
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.48,
+				0.54,
+				0.46
+			],
+			"uptime": 628158.94
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T18:47:41.577Z [error] : middlewareError / uncaughtException: The to array is required for all personalization objects, and must have at least one email object with a valid email address. / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 18:47:43 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: The to array is required for all personalization objects, and must have at least one email object with a valid email address.\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 21:47:41 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10277,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 68825088,
+				"heapTotal": 33767424,
+				"heapUsed": 14303192,
+				"external": 1079802,
+				"arrayBuffers": 152702
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.65,
+				0.56,
+				0.47
+			],
+			"uptime": 628230.09
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:38:12.328Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:38:14 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:38:12 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 59260928,
+				"heapTotal": 15155200,
+				"heapUsed": 14229448,
+				"external": 1077775,
+				"arrayBuffers": 152702
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.29,
+				0.28,
+				0.16
+			],
+			"uptime": 634860.84
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:40:15.907Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:40:17 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:40:15 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 60039168,
+				"heapTotal": 15417344,
+				"heapUsed": 14293712,
+				"external": 1102632,
+				"arrayBuffers": 76980
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.24,
+				0.24,
+				0.16
+			],
+			"uptime": 634984.42
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7445",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:44:12.565Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:44:14 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:44:12 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 59764736,
+				"heapTotal": 16203776,
+				"heapUsed": 14366488,
+				"external": 1127343,
+				"arrayBuffers": 64088
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.34,
+				0.23,
+				0.17
+			],
+			"uptime": 635221.08
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7447",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:48:52.774Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:48:54 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:48:52 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 60252160,
+				"heapTotal": 16203776,
+				"heapUsed": 14751504,
+				"external": 1152055,
+				"arrayBuffers": 88800
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.15,
+				0.15,
+				0.15
+			],
+			"uptime": 635501.29
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7448",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:50:36.118Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:50:38 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:50:36 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 60276736,
+				"heapTotal": 16465920,
+				"heapUsed": 14692120,
+				"external": 1176769,
+				"arrayBuffers": 69571
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.46,
+				0.28,
+				0.2
+			],
+			"uptime": 635604.63
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7450",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:52:04.168Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:52:06 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:52:04 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 60755968,
+				"heapTotal": 16465920,
+				"heapUsed": 15069408,
+				"external": 1201484,
+				"arrayBuffers": 94286
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.17,
+				0.25,
+				0.19
+			],
+			"uptime": 635692.68
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7451",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T20:53:33.923Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 20:53:35 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 23:53:33 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 61014016,
+				"heapTotal": 16465920,
+				"heapUsed": 15455832,
+				"external": 1226198,
+				"arrayBuffers": 119000
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.18,
+				0.21,
+				0.18
+			],
+			"uptime": 635782.44
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7450",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T21:18:11.320Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 21:18:13 GMT",
+					"content-type": "application/json",
+					"content-length": "288",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "The to array is required for all personalization objects, and must have at least one email object with a valid email address.",
+							"field": "personalizations.0.to",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Tue Sep 13 2022 00:18:11 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 61227008,
+				"heapTotal": 16990208,
+				"heapUsed": 15429688,
+				"external": 1267318,
+				"arrayBuffers": 109868
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.03,
+				0.08,
+				0.1
+			],
+			"uptime": 637259.84
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7447",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T21:37:11.914Z [error] : middlewareError / uncaughtException: Bad Request / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"message": "Bad Request",
+			"code": 400,
+			"response": {
+				"headers": {
+					"server": "nginx",
+					"date": "Mon, 12 Sep 2022 21:37:13 GMT",
+					"content-type": "application/json",
+					"content-length": "204",
+					"connection": "close",
+					"access-control-allow-origin": "https://sendgrid.api-docs.io",
+					"access-control-allow-methods": "POST",
+					"access-control-allow-headers": "Authorization, Content-Type, On-behalf-of, x-sg-elas-acl",
+					"access-control-max-age": "600",
+					"x-no-cors-reason": "https://sendgrid.com/docs/Classroom/Basics/API/cors.html",
+					"strict-transport-security": "max-age=600; includeSubDomains"
+				},
+				"body": {
+					"errors": [
+						{
+							"message": "Does not contain a valid address.",
+							"field": "personalizations.0.to.0.email",
+							"help": "http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html#message.personalizations.to"
+						}
+					]
+				}
+			}
+		},
+		"level": "error",
+		"message": "uncaughtException: Bad Request\nError: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"stack": "Error: Bad Request\n    at node_modules/@sendgrid/client/src/classes/client.js:146:29\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+		"exception": true,
+		"date": "Tue Sep 13 2022 00:37:11 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 10371,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa/backend",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend"
+			],
+			"memoryUsage": {
+				"rss": 61014016,
+				"heapTotal": 16990208,
+				"heapUsed": 15107360,
+				"external": 1292032,
+				"arrayBuffers": 90134
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.44,
+				0.34,
+				0.23
+			],
+			"uptime": 638400.43
+		},
+		"trace": [
+			{
+				"column": 29,
+				"file": "node_modules/@sendgrid/client/src/classes/client.js",
+				"function": null,
+				"line": 146,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "node:internal/process/task_queues",
+				"function": "processTicksAndRejections",
+				"line": 96,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "7450",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}

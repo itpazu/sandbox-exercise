@@ -18,8 +18,9 @@ export default class ChartData {
     this.stats = stats;
     this.labels = Object.keys(stats);
     this.datasets = [new summaryModalParent(stats, palette, this.labels)];
+    this.isThreatDetected = this.checkIsThreatDetected();
   }
-  get isThreatDetected() {
+  checkIsThreatDetected() {
     return this.stats['malicious'] + this.stats['suspicious'] > 0;
   }
 }

@@ -1,21 +1,31 @@
-import React, { useState, forwardRef } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Tabs, Tab, Box, Typography } from '@mui/material';
+import React, { useState, forwardRef, useEffect } from 'react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Tabs, Tab, Box } from '@mui/material';
 import TimerSnackBar from './timerSnackBar';
+import FileDetailsCard from './fileDetailsCard';
 
 export const RouterLinkWithProps = forwardRef((props, ref) => (
   <Link ref={ref} to='/' {...props} role={undefined} />
 ));
 
 const ResultsParent = () => {
-  const { state } = useLocation();
+  const { state = undefined } = useLocation();
+  const navigate = useNavigate();
   const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (!state) navigate('/');
+  });
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
   };
-  console.log(state);
-  const { name: fileName, size: fileSize, type: fileType } = state;
+
+  const {
+    name: fileName = '',
+    size: fileSize = '',
+    type: fileType = '',
+  } = state || { fileName: '', fileSize: '', fileType: '' };
   return (
     <>
       <TimerSnackBar fetchDuration={state?.timePassed} />
@@ -41,9 +51,12 @@ const ResultsParent = () => {
           />
         </Tabs>
 
-        <Typography variant='h6' sx={{ textAlign: 'center', marginTop: '2px' }}>
-          {`Scan results for file ${fileName} / ${fileType} / ${fileSize}`}
-        </Typography>
+        <FileDetailsCard
+          fileName={fileName}
+          fileSize={fileSize}
+          fileType={fileType}
+          rows={false}
+        />
       </Box>
 
       <Outlet />

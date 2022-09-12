@@ -5,7 +5,7 @@
 
 # production
 /build
-.vscode/
+.vscode/*
 npm-debug.log*
 .env
 error-logs.txt

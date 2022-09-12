@@ -7,17 +7,17 @@ import { useLocation, useNavigate } from 'react-router-dom';
 function DougnutChart() {
   const navigate = useNavigate();
   const { state } = useLocation();
+  console.log(state?.chartData);
 
   useEffect(() => {
     if (!state) navigate('/');
   });
   const isDetected = state?.chartData?.isThreatDetected;
   const position = {
-    topPosition: '50%',
+    topPosition: '63%',
     leftPosition: '50%',
-    width: '80vw',
+    width: '40vw',
     minWidth: '250px',
-    maxWidth: '40vw',
   };
 
   return (

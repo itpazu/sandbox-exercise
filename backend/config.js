@@ -5,8 +5,17 @@ const virusTotalConfig = {
   ANALYSIS_URL: '/analyses',
   DEFAULT_HEADRS: {
     accept: 'application/json',
-    'x-apikey':
-      'd0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54',
+    'x-apikey': process.env.VIRUS_TOTAL_XPI_KEY,
   },
 };
-module.exports = { virusTotalConfig };
+WHITELISTED_CLIENTS = ['http://localhost:3000'];
+
+const BASIC_MAIL_CONFIG = {
+  to: undefined,
+  from: process.env.EMAIL_SENDER, //
+  subject: 'File Scan Results',
+  text: 'See below results as requested',
+  html: undefined,
+};
+
+module.exports = { virusTotalConfig, WHITELISTED_CLIENTS, BASIC_MAIL_CONFIG };

@@ -7,6 +7,7 @@ import BreadCrumbs from './components/breadcrumbs';
 import ResultsDataTable from './components/table';
 import DougnutChart from './components/dougnutChart';
 import ResultsParent from './components/resultsParent';
+import EmailRequest from './components/emailRequest';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<DougnutChart />} />
           <Route path='table' element={<ResultsDataTable />} />
           <Route path='doughnut' element={<DougnutChart />} />
+          <Route path='email' element={<EmailRequest />} />
         </Route>
       </Routes>
     </BrowserRouter>

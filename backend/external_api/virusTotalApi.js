@@ -22,6 +22,9 @@ const uploadFileToVirusTotal = ({ uploadUrl, form }) => {
         ...form.getHeaders(),
         ...virusTotalConfig.DEFAULT_HEADRS,
       },
+
+      maxContentLength: Infinity,
+      maxBodyLength: Infinity,
     }
   );
 };

@@ -1,18 +1,27 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 const express = require('express');
 const cors = require('cors');
 const errorMiddleware = require('./middlewares/errorMiddleware');
 const virusTotalRouter = require('./routes/virusTotalRoutes');
+const emailRouter = require('./routes/emailRequestRoute');
+const { expressLogger, errorLogger } = require('./logger/logger');
+const sendMail = require('./email/mailResults');
+const { WHITELISTED_CLIENTS } = require('./config');
+
 const port = 5000;
 const app = express();
-const { expressLogger, errorLogger } = require('./logger/logger');
-
 app.use(
   cors({
-    origin: ['http://localhost:3000'],
+    origin: WHITELISTED_CLIENTS,
   })
 );
 app.use(expressLogger);
 app.use('/', virusTotalRouter);
+app.use('/email', emailRouter);
 app.use(errorLogger);
 app.use(errorMiddleware);
+
+process.env.SENDGRID_API_KEY;
 app.listen(port);

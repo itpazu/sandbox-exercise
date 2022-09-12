@@ -1,7 +1,17 @@
 {
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "name": "debug server",
+            "program": "${workspaceFolder}/backend/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+    
+        {
+            "type": "chrome",
             "name": "http://localhost:3000/",
             "request": "launch",
             "url": "http://localhost:3000/"

@@ -32,7 +32,12 @@ const Results = () => {
 
   useEffect(() => {
     if (rows) {
-      navigate('/results', { state: { timePassed, rows, chartData } });
+      const {
+        file: { name, size, type },
+      } = state;
+      navigate('/results', {
+        state: { timePassed, rows, chartData, name, size, type },
+      });
       return;
     }
     // in strict mode useEffect runs twice - the line below prevents duplicated api calls

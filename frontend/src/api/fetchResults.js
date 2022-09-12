@@ -7,5 +7,8 @@ export const uploadFileToSever = async ({ file }) => {
   return data;
 };
 
-export const scanFile = async (id) =>
-  await axios.get(`${BASIC_URL}/analysis/${id}`);
+export const scanFile = (id) => axios.get(`${BASIC_URL}/analysis/${id}`);
+
+export const sendEmailToUser = (data) => {
+  return axios.post(`${BASIC_URL}/email`, data);
+};

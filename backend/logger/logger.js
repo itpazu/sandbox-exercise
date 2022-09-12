@@ -8,7 +8,7 @@ const error_message_formatter = printf(
     if (metadata) {
       const { meta } = metadata;
       let statusCode = `status code: ${
-        JSON.stringify(meta.res?.statusCode) || ''
+        JSON.stringify(meta.res?.statusCode || meta.status) || ''
       }`;
       let userAgent = ` from client: ${meta.req.headers['user-agent']}` || '';
       let errorMessage =

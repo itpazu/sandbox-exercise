@@ -8,6 +8,7 @@ const breadcrumbNameMap = {
   '/results': 'Results',
   '/results/table': 'Table',
   '/results/doughnut': 'Summary',
+  '/results/email': 'Email',
 };
 
 const LinkRouter = (props) => (

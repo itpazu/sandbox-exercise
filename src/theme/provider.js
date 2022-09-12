@@ -1,7 +1,11 @@
 import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import {
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from '@mui/material/styles';
 
-const theme = createTheme({
+let theme = createTheme({
   components: {
     MuiSnackbar: {
       styleOverrides: {
@@ -9,19 +13,19 @@ const theme = createTheme({
         //     backgroundColor:
         // },
         anchorOriginTopRight: {
-          top: '55px',
+          top: '90vh',
           '@media (min-width: 1000px)': {
             top: '2.5px',
           },
           '@media (min-width: 600px)': {
-            top: '55px',
+            top: '52px',
           },
         },
       },
     },
   },
 });
-
+theme = responsiveFontSizes(theme);
 export default function GlobalThemeOverride({ children }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }

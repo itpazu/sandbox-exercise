@@ -7,24 +7,20 @@ const useCounter = (bool) => {
   const toggleStart = () => setStart((prev) => !prev);
 
   useEffect(() => {
-    let interval;
-    if (!start) {
-      clearInterval(interval);
-    } else {
-      interval = setInterval(() => {
-        setTimePassed((timeObject) => {
-          let newTime;
-          if (timeObject.seconds && timeObject.seconds % 59 === 0) {
-            newTime = { minutes: timeObject.minutes + 1, seconds: 0 };
-          } else {
-            newTime = { ...timeObject, seconds: timeObject.seconds + 1 };
-          }
-          return newTime;
-        });
-      }, 1000);
-    }
+    let interval = setInterval(() => {
+      setTimePassed((timeObject) => {
+        let newTime;
+        if (timeObject.seconds && timeObject.seconds % 59 === 0) {
+          newTime = { minutes: timeObject.minutes + 1, seconds: 0 };
+        } else {
+          newTime = { ...timeObject, seconds: timeObject.seconds + 1 };
+        }
+        return newTime;
+      });
+    }, 1000);
 
     return () => {
+      console.log(interval);
       clearInterval(interval);
     };
   }, [start]);

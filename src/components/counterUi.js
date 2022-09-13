@@ -46,4 +46,5 @@ const CounterUi = ({ timePassed, toggleStart }) => {
     </>
   );
 };
+
 export default CounterUi;

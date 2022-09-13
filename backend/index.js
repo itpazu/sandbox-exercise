@@ -24,4 +24,5 @@ app.use(errorLogger);
 app.use(errorMiddleware);
 
 process.env.SENDGRID_API_KEY;
+process.title = 'sandbox-server';
 app.listen(port);

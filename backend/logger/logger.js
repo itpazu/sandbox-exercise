@@ -1,5 +1,9 @@
-const { createLogger, transports, format } = require('winston');
+const winston = require('winston');
+require('winston-syslog').Syslog;
 const expressWinston = require('express-winston');
+winston.add(new winston.transports.Syslog());
+
+const { createLogger, transports, format, config } = winston;
 const { combine, timestamp, printf, colorize, prettyPrint } = format;
 
 const error_message_formatter = printf(
@@ -45,10 +49,8 @@ const logger = createLogger({
       level: 'info',
       format: combine(timestamp(), message_formatter),
     }),
-    new transports.File({
-      name: 'file logging',
-      filename: 'error-logs.txt',
-      level: 'error',
+    new transports.Syslog({
+      levels: config.syslog.levels,
       format: combine(timestamp(), error_message_formatter),
     }),
   ],

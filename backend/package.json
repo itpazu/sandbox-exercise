@@ -1,4 +1,5 @@
 {
+  "name": "sandbox-server",
   "scripts": {
     "dev": "nodemon .",
     "start": "node ."
@@ -13,7 +14,8 @@
     "express-winston": "^4.2.0",
     "multer": "^1.4.5-lts.1",
     "quickchart-js": "^3.1.0",
-    "winston": "^3.8.2"
+    "winston": "^3.8.2",
+    "winston-syslog": "^2.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

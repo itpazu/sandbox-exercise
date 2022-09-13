@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASIC_URL = 'http://localhost:5000';
+const BASIC_URL = process.env.REACT_APP_SERVER_BASIC_URL;
 
 export const uploadFileToSever = async ({ file }) => {
   const { data } = await axios.post(`${BASIC_URL}/upload`, file);

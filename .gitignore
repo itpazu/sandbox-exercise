@@ -8,5 +8,5 @@
 .vscode/*
 npm-debug.log*
 .env
-error-logs.txt
-info-logs.txt
+backend/error-logs.txt
+backend/info-logs.txt

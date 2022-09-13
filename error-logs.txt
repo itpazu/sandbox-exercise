@@ -1,0 +1,1046 @@
+2022-09-11T18:42:25.980Z [error] : middlewareError / uncaughtException: Request body larger than maxBodyLength limit / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"message": "Request body larger than maxBodyLength limit",
+			"name": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]",
+			"stack": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+			"config": {
+				"transitional": {
+					"silentJSONParsing": true,
+					"forcedJSONParsing": true,
+					"clarifyTimeoutError": false
+				},
+				"transformRequest": [
+					null
+				],
+				"transformResponse": [
+					null
+				],
+				"timeout": 0,
+				"xsrfCookieName": "XSRF-TOKEN",
+				"xsrfHeaderName": "X-XSRF-TOKEN",
+				"maxContentLength": -1,
+				"maxBodyLength": -1,
+				"env": {},
+				"headers": {
+					"Accept": "application/json",
+					"Content-Type": "multipart/form-data; boundary=--------------------------638703196562179595556022",
+					"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+					"User-Agent": "axios/0.27.2",
+					"content-type": "multipart/form-data; boundary=--------------------------638703196562179595556022"
+				},
+				"method": "post",
+				"url": "https://www.virustotal.com/api/v3/files",
+				"data": {
+					"_overheadLength": 150,
+					"_valueLength": 12828256,
+					"_valuesToMeasure": [],
+					"writable": false,
+					"readable": true,
+					"dataSize": 0,
+					"maxDataSize": 2097152,
+					"pauseStreams": true,
+					"_released": true,
+					"_streams": [],
+					"_currentStream": null,
+					"_insideLoop": false,
+					"_pendingNext": false,
+					"_boundary": "--------------------------638703196562179595556022",
+					"_events": {},
+					"_eventsCount": 1
+				}
+			},
+			"code": "ERR_FR_MAX_BODY_LENGTH_EXCEEDED",
+			"status": null
+		},
+		"level": "error",
+		"message": "uncaughtException: Request body larger than maxBodyLength limit\nError [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+		"stack": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+		"exception": true,
+		"date": "Sun Sep 11 2022 21:42:25 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 20255,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 90857472,
+				"heapTotal": 16035840,
+				"heapUsed": 14210528,
+				"external": 26636330,
+				"arrayBuffers": 12861346
+			}
+		},
+		"os": {
+			"loadavg": [
+				0,
+				0.02,
+				0
+			],
+			"uptime": 573306.17
+		},
+		"trace": [
+			{
+				"column": 24,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js",
+				"function": "RedirectableRequest.write",
+				"line": 102,
+				"method": "write",
+				"native": false
+			},
+			{
+				"column": 31,
+				"file": "node:internal/streams/legacy",
+				"function": "FormData.ondata",
+				"line": 20,
+				"method": "ondata",
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "FormData.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.write",
+				"line": 138,
+				"method": "write",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._pipeNext",
+				"line": 126,
+				"method": "_pipeNext",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._realGetNext",
+				"line": 99,
+				"method": "_realGetNext",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._getNext",
+				"line": 82,
+				"method": "_getNext",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.resume",
+				"line": 154,
+				"method": "resume",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.pipe",
+				"line": 66,
+				"method": "pipe",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js",
+				"function": "dispatchHttpRequest",
+				"line": 419,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "2b1380bc-9763-42e2-a838-8fbc188f5a5c",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------738761937603501944584643",
+				"content-length": "12828490"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-11T18:43:30.291Z [error] : middlewareError / uncaughtException: Request body larger than maxBodyLength limit / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"message": "Request body larger than maxBodyLength limit",
+			"name": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]",
+			"stack": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+			"config": {
+				"transitional": {
+					"silentJSONParsing": true,
+					"forcedJSONParsing": true,
+					"clarifyTimeoutError": false
+				},
+				"transformRequest": [
+					null
+				],
+				"transformResponse": [
+					null
+				],
+				"timeout": 0,
+				"xsrfCookieName": "XSRF-TOKEN",
+				"xsrfHeaderName": "X-XSRF-TOKEN",
+				"maxContentLength": -1,
+				"maxBodyLength": -1,
+				"env": {},
+				"headers": {
+					"Accept": "application/json",
+					"Content-Type": "multipart/form-data; boundary=--------------------------800411481832692361851438",
+					"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+					"User-Agent": "axios/0.27.2",
+					"content-type": "multipart/form-data; boundary=--------------------------800411481832692361851438"
+				},
+				"method": "post",
+				"url": "https://www.virustotal.com/api/v3/files",
+				"data": {
+					"_overheadLength": 150,
+					"_valueLength": 12828256,
+					"_valuesToMeasure": [],
+					"writable": false,
+					"readable": true,
+					"dataSize": 0,
+					"maxDataSize": 2097152,
+					"pauseStreams": true,
+					"_released": true,
+					"_streams": [],
+					"_currentStream": null,
+					"_insideLoop": false,
+					"_pendingNext": false,
+					"_boundary": "--------------------------800411481832692361851438",
+					"_events": {},
+					"_eventsCount": 1
+				}
+			},
+			"code": "ERR_FR_MAX_BODY_LENGTH_EXCEEDED",
+			"status": null
+		},
+		"level": "error",
+		"message": "uncaughtException: Request body larger than maxBodyLength limit\nError [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+		"stack": "Error [ERR_FR_MAX_BODY_LENGTH_EXCEEDED]: Request body larger than maxBodyLength limit\n    at RedirectableRequest.write (/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js:102:24)\n    at FormData.ondata (node:internal/streams/legacy:20:31)\n    at FormData.emit (node:events:527:28)\n    at FormData.CombinedStream.write (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:138:8)\n    at FormData.CombinedStream._pipeNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:126:8)\n    at FormData.CombinedStream._realGetNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:99:10)\n    at FormData.CombinedStream._getNext (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:82:12)\n    at FormData.CombinedStream.resume (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:154:10)\n    at FormData.CombinedStream.pipe (/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js:66:8)\n    at dispatchHttpRequest (/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js:419:10)",
+		"exception": true,
+		"date": "Sun Sep 11 2022 21:43:30 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 20338,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 101072896,
+				"heapTotal": 32026624,
+				"heapUsed": 17730968,
+				"external": 28613541,
+				"arrayBuffers": 25690138
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.06,
+				0.03,
+				0
+			],
+			"uptime": 573370.48
+		},
+		"trace": [
+			{
+				"column": 24,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/follow-redirects/index.js",
+				"function": "RedirectableRequest.write",
+				"line": 102,
+				"method": "write",
+				"native": false
+			},
+			{
+				"column": 31,
+				"file": "node:internal/streams/legacy",
+				"function": "FormData.ondata",
+				"line": 20,
+				"method": "ondata",
+				"native": false
+			},
+			{
+				"column": 28,
+				"file": "node:events",
+				"function": "FormData.emit",
+				"line": 527,
+				"method": "emit",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.write",
+				"line": 138,
+				"method": "write",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._pipeNext",
+				"line": 126,
+				"method": "_pipeNext",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._realGetNext",
+				"line": 99,
+				"method": "_realGetNext",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream._getNext",
+				"line": 82,
+				"method": "_getNext",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.resume",
+				"line": 154,
+				"method": "resume",
+				"native": false
+			},
+			{
+				"column": 8,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/combined-stream/lib/combined_stream.js",
+				"function": "FormData.CombinedStream.pipe",
+				"line": 66,
+				"method": "pipe",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/axios/lib/adapters/http.js",
+				"function": "dispatchHttpRequest",
+				"line": 419,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/upload",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "4cda5e5a-f1dd-49c7-81b1-ef28d4623de4",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive",
+				"content-type": "multipart/form-data; boundary=--------------------------758886605315017146020371",
+				"content-length": "12828490"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/upload",
+			"query": {}
+		}
+	}
+}
+2022-09-11T18:56:48.644Z [error] : middlewareError / uncaughtException: Request failed with status code 400 / status code:  /  from client: PostmanRuntime/7.29.2 / {
+	"meta": {
+		"error": {
+			"message": "Request failed with status code 400",
+			"name": "AxiosError",
+			"config": {
+				"transitional": {
+					"silentJSONParsing": true,
+					"forcedJSONParsing": true,
+					"clarifyTimeoutError": false
+				},
+				"transformRequest": [
+					null
+				],
+				"transformResponse": [
+					null
+				],
+				"timeout": 0,
+				"xsrfCookieName": "XSRF-TOKEN",
+				"xsrfHeaderName": "X-XSRF-TOKEN",
+				"maxContentLength": -1,
+				"maxBodyLength": -1,
+				"env": {},
+				"headers": {
+					"Accept": "application/json",
+					"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+					"User-Agent": "axios/0.27.2"
+				},
+				"method": "get",
+				"url": "https://www.virustotal.com/api/v3/analyses/ZmQ3ZTU2NjFiNDA0NWRkZjg4OWJhYzQ1NzMxMDkzZDE6MTY2MjkyMjM3Mw="
+			},
+			"code": "ERR_BAD_REQUEST",
+			"status": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: Request failed with status code 400\n  No stack trace",
+		"exception": true,
+		"date": "Sun Sep 11 2022 21:56:48 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 20527,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 84180992,
+				"heapTotal": 16560128,
+				"heapUsed": 15412080,
+				"external": 10847161,
+				"arrayBuffers": 9901081
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.01,
+				0.02,
+				0
+			],
+			"uptime": 574168.83
+		},
+		"trace": [],
+		"req": {
+			"url": "/analysis/ZmQ3ZTU2NjFiNDA0NWRkZjg4OWJhYzQ1NzMxMDkzZDE6MTY2MjkyMjM3Mw=",
+			"headers": {
+				"x-apikey": "d0771b877c348f12fbe62711e6ba692c3782e5707fc5e12574c2f70968762b54",
+				"user-agent": "PostmanRuntime/7.29.2",
+				"accept": "*/*",
+				"postman-token": "1fcd5c4a-5e55-4d6c-9aee-e2b4fcac1852",
+				"host": "localhost:5000",
+				"accept-encoding": "gzip, deflate, br",
+				"connection": "keep-alive"
+			},
+			"method": "GET",
+			"httpVersion": "1.1",
+			"originalUrl": "/analysis/ZmQ3ZTU2NjFiNDA0NWRkZjg4OWJhYzQ1NzMxMDkzZDE6MTY2MjkyMjM3Mw=",
+			"query": {}
+		}
+	}
+}
+2022-09-12T00:14:22.563Z [error] : middlewareError / uncaughtException: [object Object] / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"stauts": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: [object Object]\nError: [object Object]\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"stack": "Error: [object Object]\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 03:14:22 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 2072,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 63123456,
+				"heapTotal": 19443712,
+				"heapUsed": 18079712,
+				"external": 977192,
+				"arrayBuffers": 33066
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.06,
+				0.24,
+				0.33
+			],
+			"uptime": 593222.75
+		},
+		"trace": [
+			{
+				"column": 21,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 10,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.handle",
+				"line": 175,
+				"method": "handle",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "router",
+				"line": 47,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "11806",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T00:16:17.895Z [error] : middlewareError / uncaughtException: no data was sent / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"stauts": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: no data was sent\nError: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"stack": "Error: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 03:16:17 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 2357,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 71127040,
+				"heapTotal": 34648064,
+				"heapUsed": 15654240,
+				"external": 3469401,
+				"arrayBuffers": 32986
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.2,
+				0.22,
+				0.3
+			],
+			"uptime": 593338.08
+		},
+		"trace": [
+			{
+				"column": 21,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 10,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.handle",
+				"line": 175,
+				"method": "handle",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "router",
+				"line": 47,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "11806",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T00:21:27.954Z [error] : middlewareError / uncaughtException: no data was sent / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"status": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: no data was sent\nError: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"stack": "Error: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 03:21:27 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 2703,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 73342976,
+				"heapTotal": 34910208,
+				"heapUsed": 15768144,
+				"external": 3469393,
+				"arrayBuffers": 32978
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.78,
+				0.35,
+				0.31
+			],
+			"uptime": 593648.14
+		},
+		"trace": [
+			{
+				"column": 21,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 10,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.handle",
+				"line": 175,
+				"method": "handle",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "router",
+				"line": 47,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "11806",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}
+2022-09-12T00:26:48.618Z [error] : middlewareError / uncaughtException: no data was sent / status code:  /  from client: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 / {
+	"meta": {
+		"error": {
+			"status": 400
+		},
+		"level": "error",
+		"message": "uncaughtException: no data was sent\nError: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"stack": "Error: no data was sent\n    at /home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js:10:21\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js:47:12)",
+		"exception": true,
+		"date": "Mon Sep 12 2022 03:26:48 GMT+0300 (Israel Daylight Time)",
+		"process": {
+			"pid": 2703,
+			"uid": 1000,
+			"gid": 1000,
+			"cwd": "/home/itpazu/exercise-sassa",
+			"execPath": "/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+			"version": "v16.15.1",
+			"argv": [
+				"/home/itpazu/.nvm/versions/node/v16.15.1/bin/node",
+				"/home/itpazu/exercise-sassa/backend/index.js"
+			],
+			"memoryUsage": {
+				"rss": 65183744,
+				"heapTotal": 17870848,
+				"heapUsed": 15832144,
+				"external": 977168,
+				"arrayBuffers": 33002
+			}
+		},
+		"os": {
+			"loadavg": [
+				0.17,
+				0.24,
+				0.27
+			],
+			"uptime": 593968.81
+		},
+		"trace": [
+			{
+				"column": 21,
+				"file": "/home/itpazu/exercise-sassa/backend/routes/emailRequestRoute.js",
+				"function": null,
+				"line": 10,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 13,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "next",
+				"line": 144,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/route.js",
+				"function": "Route.dispatch",
+				"line": 114,
+				"method": "dispatch",
+				"native": false
+			},
+			{
+				"column": 5,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/layer.js",
+				"function": "Layer.handle [as handle_request]",
+				"line": 95,
+				"method": "handle [as handle_request]",
+				"native": false
+			},
+			{
+				"column": 15,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": null,
+				"line": 284,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.process_params",
+				"line": 346,
+				"method": "process_params",
+				"native": false
+			},
+			{
+				"column": 10,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "next",
+				"line": 280,
+				"method": null,
+				"native": false
+			},
+			{
+				"column": 3,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "Function.handle",
+				"line": 175,
+				"method": "handle",
+				"native": false
+			},
+			{
+				"column": 12,
+				"file": "/home/itpazu/exercise-sassa/backend/node_modules/express/lib/router/index.js",
+				"function": "router",
+				"line": 47,
+				"method": null,
+				"native": false
+			}
+		],
+		"req": {
+			"url": "/email",
+			"headers": {
+				"host": "localhost:5000",
+				"connection": "keep-alive",
+				"content-length": "11806",
+				"sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+				"accept": "application/json, text/plain, */*",
+				"content-type": "application/json",
+				"sec-ch-ua-mobile": "?0",
+				"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+				"sec-ch-ua-platform": "\"Windows\"",
+				"origin": "http://localhost:3000",
+				"sec-fetch-site": "same-site",
+				"sec-fetch-mode": "cors",
+				"sec-fetch-dest": "empty",
+				"referer": "http://localhost:3000/",
+				"accept-encoding": "gzip, deflate, br",
+				"accept-language": "en-US,en;q=0.9,de;q=0.8,es;q=0.7,he;q=0.6"
+			},
+			"method": "POST",
+			"httpVersion": "1.1",
+			"originalUrl": "/email",
+			"query": {}
+		}
+	}
+}

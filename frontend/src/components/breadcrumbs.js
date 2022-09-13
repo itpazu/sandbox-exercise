@@ -14,6 +14,7 @@ const breadcrumbNameMap = {
 const LinkRouter = (props) => (
   <Link {...props} variant='h4' component={NavLink} />
 );
+
 const Page = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);

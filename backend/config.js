@@ -8,7 +8,7 @@ const virusTotalConfig = {
     'x-apikey': process.env.VIRUS_TOTAL_XPI_KEY,
   },
 };
-WHITELISTED_CLIENTS = ['http://localhost:3000'];
+WHITELISTED_CLIENTS = [process.env.ALLOWED_CLIENTS];
 
 const BASIC_MAIL_CONFIG = {
   to: undefined,

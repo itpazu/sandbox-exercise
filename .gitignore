@@ -10,3 +10,4 @@ npm-debug.log*
 .env
 backend/error-logs.txt
 backend/info-logs.txt
+node_modules/

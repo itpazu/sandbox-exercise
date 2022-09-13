@@ -10,7 +10,6 @@ const { expressLogger, errorLogger } = require('./logger/logger');
 const sendMail = require('./email/mailResults');
 const { WHITELISTED_CLIENTS } = require('./config');
 
-const port = 5000;
 const app = express();
 app.use(
   cors({
@@ -24,4 +23,4 @@ app.use(errorLogger);
 app.use(errorMiddleware);
 
 process.env.SENDGRID_API_KEY;
-app.listen(port);
+app.listen(process.env.PORT);

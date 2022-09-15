@@ -20,7 +20,6 @@ const useCounter = (bool) => {
     }, 1000);
 
     return () => {
-      console.log(interval);
       clearInterval(interval);
     };
   }, [start]);

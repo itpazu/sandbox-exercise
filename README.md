@@ -27,7 +27,7 @@ Install packages:
     $cd backend && npm install
 
 Provide environment variables by pasting .env file* in the corresponding directory - frontend and backend 
-(as an alternative prvoide them when launcgin the application from the terminal).
+(as an alternative prvoide them when launching the application from the terminal).
 
 --> Note that you can adjust the ports where you want each service to run. The default ports are defined inside each .env file. 
 By default, the development server was set to run on localhost:5000 while the development frontend shall run on localhost:3000. 

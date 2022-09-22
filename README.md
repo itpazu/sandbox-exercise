@@ -7,7 +7,7 @@ which in turn forwards the file to "Virus Total"'s api for a scanning.
 
 A counter starts ticking, to measure the duration of the request. When the server obtains the data send it sends it forward to the UI. 
 On the screen, a general assessment is provided as to whether the file contains suspicious or malicious software. The results are presented in the UI in two layouts:
-A "donought" pie chart summarizing the results from differnet engines, and a collapsible table elaborates on the different engines used to scan the file. 
+A "donought" pie chart summarizing the results from differnet engines, and a collapsible table elaborating on the different engines used to scan the file. 
 
 The user can also request the results to be sent over by email. 
 

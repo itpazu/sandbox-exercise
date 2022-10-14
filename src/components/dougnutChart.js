@@ -14,42 +14,53 @@ function DougnutChart() {
   });
   const isDetected = state?.chartData?.isThreatDetected;
   const position = {
-    topPosition: '63%',
-    leftPosition: '50%',
-    width: '40vw',
+    leftPosition: 'clamp(200px, 50%, 1200px)',
     minWidth: '250px',
   };
-
   return (
     <>
       {!!state?.chartData && (
         <BoxItem {...position}>
-          <Doughnut
-            data={state?.chartData}
-            options={{
-              responsive: true,
-              plugins: {
-                title: {
-                  display: true,
-                  text: `Scan Summary: Threat ${
-                    isDetected ? 'Suspicious' : 'Undetected'
-                  }`,
-                  size: '15px',
-                  color: isDetected ? 'red' : 'green',
-                  font: { weight: 'bold', size: '25px' },
-                },
-                legend: {
-                  display: true,
-                  position: 'left',
-                  align: 'left',
-                  labels: {
-                    color: 'black',
-                    font: { weight: 'bold', size: '12px' },
+          <div
+            style={{
+              position: 'relative',
+              margin: 'auto',
+              height: '62vh',
+              width: '50vw',
+              minHeight: '280px',
+              maxHeight: '500px',
+              minWidth: '330px',
+            }}
+          >
+            <Doughnut
+              data={state?.chartData}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+
+                plugins: {
+                  title: {
+                    display: true,
+                    text: `Scan Summary: Threat ${
+                      isDetected ? 'Suspicious' : 'Undetected'
+                    }`,
+                    size: '15px',
+                    color: isDetected ? 'red' : 'green',
+                    font: { weight: 'bold', size: '25px' },
+                  },
+                  legend: {
+                    display: true,
+                    position: 'left',
+                    align: 'left',
+                    labels: {
+                      color: 'black',
+                      font: { weight: 'bold', size: '12px' },
+                    },
                   },
                 },
-              },
-            }}
-          />
+              }}
+            />
+          </div>
         </BoxItem>
       )}
     </>

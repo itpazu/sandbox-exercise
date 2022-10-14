@@ -9,16 +9,29 @@ let theme = createTheme({
   components: {
     MuiSnackbar: {
       styleOverrides: {
-        // root: {
-        //     backgroundColor:
-        // },
-        anchorOriginTopRight: {
-          top: '90vh',
-          '@media (min-width: 1000px)': {
-            top: '2.5px',
+        root: {
+          '& .MuiSnackbarContent-root': {
+            '@media (min-width: 600px)': {
+              minWidth: 'fit-content',
+            },
           },
-          '@media (min-width: 600px)': {
-            top: '52px',
+        },
+        anchorOriginTopRight: {
+          '@media (min-width: 335px)': {
+            maxWidth: 'fit-content',
+            top: '10vh',
+            right: '10px',
+            left: 'auto',
+          },
+          '@media (min-width: 900px)': {
+            maxWidth: 'fit-content',
+            right: '40vw',
+          },
+          '@media (max-width: 335px)': {
+            display: 'none',
+          },
+          '@media screen and (max-height: 530px)': {
+            display: 'none',
           },
         },
       },
@@ -26,6 +39,7 @@ let theme = createTheme({
   },
 });
 theme = responsiveFontSizes(theme);
+console.log(theme.components.MuiSnackbar);
 export default function GlobalThemeOverride({ children }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }

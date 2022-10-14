@@ -10,15 +10,19 @@ import {
   Paper,
   colors,
   TablePagination,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 import BoxItem from '../theme/BoxItem';
 import Row from './tableRow';
 
-export default function CollapsibleTable(props) {
+export default function CollapsibleTable() {
   const navigate = useNavigate();
   const { state } = useLocation();
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
+  const theme = useTheme();
+  const isMedScreen = useMediaQuery(theme.breakpoints.up('md'));
 
   const handleChangePage = (_, newPage) => {
     setPage(newPage);
@@ -35,7 +39,7 @@ export default function CollapsibleTable(props) {
     <>
       {!!state?.rows && (
         <>
-          <BoxItem topPosition={'60vh'} leftPosition={'50%'} width={'80vw'}>
+          <BoxItem leftPosition={'50%'} width={isMedScreen ? '50vw' : 'auto'}>
             <TableContainer
               component={Paper}
               sx={{ maxHeight: '70vh', overflow: 'fit-content' }}

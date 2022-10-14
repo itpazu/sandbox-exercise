@@ -79,7 +79,7 @@ const EmailRequest = () => {
   const hasError = () => (formState.touched && formState.errors ? true : false);
   return (
     <>
-      <BoxItem leftPosition={'50vw'} topPosition={'45vh'} width={'40vw'}>
+      <BoxItem leftPosition={'50vw'} width={'40vw'}>
         <Stack>
           <TextField
             onChange={handleChange}

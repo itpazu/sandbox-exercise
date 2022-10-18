@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <BreadCrumbs />
       <Routes>
-        <Route path='/' element={<UploadButton />} />
+        <Route path='/sandbox-exercise/' element={<UploadButton />} />
         <Route path='submit' element={<SubmitFile />} />
         <Route
           path='*'

@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://itpazu.github.io/sandbox-exercise/",
+  "homepage": "https://itpazu.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",

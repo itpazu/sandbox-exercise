@@ -15,6 +15,7 @@ function DougnutChart() {
   const isDetected = state?.chartData?.isThreatDetected;
   const position = {
     leftPosition: 'clamp(200px, 50%, 1200px)',
+    topPosition: 'clamp(250px, 60vh,  700px)',
     minWidth: '250px',
   };
   return (

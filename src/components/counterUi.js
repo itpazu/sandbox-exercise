@@ -18,14 +18,19 @@ const CounterUi = ({ timePassed, toggleStart }) => {
           .map(([key, val]) => {
             return (
               <Grid align='center' key={key}>
-                <StyledPaper key={val} width={'50%'} fontSize={'30px'}>
+                <StyledPaper
+                  key={val}
+                  width={'6vw'}
+                  fontSize={'2vmax'}
+                  padding={'1vmin'}
+                >
                   {key.slice(0, 3).toUpperCase()}
                 </StyledPaper>
 
                 <StyledPaper
-                  padding={'45px'}
-                  fontSize={'60px'}
-                  width={80}
+                  padding={'3vmin'}
+                  fontSize={'3vmax'}
+                  width={'10vw'}
                   elevation={5}
                   key={key + val}
                 >

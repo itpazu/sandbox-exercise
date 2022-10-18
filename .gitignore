@@ -1,6 +1,0 @@
-node_modules
-backend/error-logs.txt
-backend/info-logs.txt
-frontend/.env
-backend/.env
-.vscode/launch.json

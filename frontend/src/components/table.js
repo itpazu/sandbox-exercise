@@ -39,7 +39,11 @@ export default function CollapsibleTable() {
     <>
       {!!state?.rows && (
         <>
-          <BoxItem leftPosition={'50%'} width={isMedScreen ? '50vw' : 'auto'}>
+          <BoxItem
+            topPosition={'clamp(250px, 60vh,  700px)'}
+            leftPosition={'50%'}
+            width={isMedScreen ? '50vw' : 'auto'}
+          >
             <TableContainer
               component={Paper}
               sx={{ maxHeight: '70vh', overflow: 'fit-content' }}

@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 const Item = styled(Box)(({ top, left, width, minWidth, maxWidth, theme }) => {
   return {
     position: 'fixed',
-    top: top || 'clamp(250px, 60vh,  700px)',
+    top: top || 'clamp(170px, 50vh,  700px)',
     left: left || 'clamp(200px, 50%, 1200px)',
     width,
     transform: 'translate(-50%, -50%)',

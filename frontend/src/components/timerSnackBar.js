@@ -7,7 +7,7 @@ export default function PositionedSnackbar({ fetchDuration }) {
     horizontal: 'right',
   };
   return (
-    <div>
+    <>
       <Snackbar
         anchorOrigin={{
           vertical,
@@ -17,6 +17,6 @@ export default function PositionedSnackbar({ fetchDuration }) {
         message={`Request Time: ${fetchDuration?.minutes}m : ${fetchDuration?.seconds}s`}
         key={vertical + horizontal}
       />
-    </div>
+    </>
   );
 }

@@ -19,7 +19,7 @@ export default function SubmitFile() {
     navigate(-1);
   };
   return (
-    <BoxItem topPosition={'50%'} leftPosition={'50%'}>
+    <BoxItem>
       <Stack direction='column' spacing={2}>
         <Grid align='center'>
           {state.file && (

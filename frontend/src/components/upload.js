@@ -14,7 +14,7 @@ export default function UploadButtons() {
   };
 
   return (
-    <BoxItem topPosition={'50%'} leftPosition={'50%'}>
+    <BoxItem>
       <Grid container direction='column'>
         <Grid
           sx={{

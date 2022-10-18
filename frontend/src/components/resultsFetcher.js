@@ -11,7 +11,7 @@ import useCounter from '../hooks/useCounter';
 import ChartData from '../data_models/summaryModal';
 
 //work with mock
-import Mockdata from '../mockResponse.json';
+// import Mockdata from '../mockResponse.json';
 
 //errors logging on screen, pause timer and remove it to the side
 const position = {
@@ -60,8 +60,8 @@ const Results = () => {
     data.append('file', file, file?.name);
     try {
       //comment out to mock
-      // const fileId = await uploadFileToSever({ file: data });
-      const fileId = await new Promise((r) => setTimeout(() => r('123'), 5000)); //mock
+      const fileId = await uploadFileToSever({ file: data });
+      // const fileId = await new Promise((r) => setTimeout(() => r('123'), 5000)); //mock
       submitScanFile(fileId);
     } catch (err) {
       toggleStart();
@@ -71,17 +71,17 @@ const Results = () => {
 
   const submitScanFile = async ({ id }) => {
     //uncomment real serever --
-    // const { status, data } = await scanFile(id);
-    // if (status === 201) {
-    //   timer.current = setTimeout(() => {
-    //     submitScanFile({ id });
-    //   }, 15000);
-    //   return;
-    // }
+    const { status, data } = await scanFile(id);
+    if (status === 201) {
+      timer.current = setTimeout(() => {
+        submitScanFile({ id });
+      }, 15000);
+      return;
+    }
     // -- uncommnet
     toggleStart();
     //--mock
-    const data = await new Promise((r) => setTimeout(() => r(Mockdata), 1000));
+    // const data = await new Promise((r) => setTimeout(() => r(Mockdata), 1000));
     // mock --
     const rows = EngineResultModel.createTableData(data);
     const dataSet = new ChartData(data, muiTheme);

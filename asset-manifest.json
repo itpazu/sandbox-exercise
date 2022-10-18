@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bacd2356.css",
-    "main.js": "/static/js/main.c401e193.js",
-    "index.html": "/index.html",
-    "main.bacd2356.css.map": "/static/css/main.bacd2356.css.map",
-    "main.c401e193.js.map": "/static/js/main.c401e193.js.map"
+    "main.css": "/sandbox-exercise/static/css/main.bacd2356.css",
+    "main.js": "/sandbox-exercise/static/js/main.ed23c315.js",
+    "index.html": "/sandbox-exercise/index.html",
+    "main.bacd2356.css.map": "/sandbox-exercise/static/css/main.bacd2356.css.map",
+    "main.ed23c315.js.map": "/sandbox-exercise/static/js/main.ed23c315.js.map"
   },
   "entrypoints": [
     "static/css/main.bacd2356.css",
-    "static/js/main.c401e193.js"
+    "static/js/main.ed23c315.js"
   ]
 }

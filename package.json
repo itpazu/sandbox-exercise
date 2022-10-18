@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://itpazu.github.io/sandbox-exercise",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -29,7 +30,9 @@
     "start:server": "cd ../backend && (npm run dev)",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
